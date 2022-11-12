@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+nav {
+  z-index: 90 !important;
+}
+footer.page-footer {
+  margin: 0 !important;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.cardo {
+  border-radius: 25px !important;
+  background-color: #f2f2f2 !important;
+  color: #f2f2f2 !important;
+}
+
+.mainimg1 {
+  height: 650px !important;
+}
+
+.flags {
+  text-decoration: underline;
+}
+.pado {
+  padding-top: 60px;
+}
+.padotwo {
+  padding-bottom: 60px;
+}
+.pado2 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.bckgcolor2 {
+  background-color: #ffffff !important;
+}
+.readytosub {
+  background-color: #4c5166 !important;
+  padding-bottom: 20px;
+}
+.readytousebutton {
+  background-color: #7b7ca8 !important;
+}
+.readytousebuttonpad {
+  padding-top: 80px;
+}
+.photo0 {
+  height: 720px !important;
+  width: 100% !important;
+  object-fit: cover;
+}
+.contenedor {
+  position: relative;
+  text-align: center;
+}
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.photo1 {
+  height: 520px !important;
+  width: 100% !important;
+  object-fit: cover;
+}
+.photo2 {
+  height: 360px !important;
+  width: 100% !important;
+  object-fit: cover;
+}
+
+.profilepic {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.textoplano {
+  font-size: larger;
+}

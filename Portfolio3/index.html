@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" media="all" />
+    
+    <!-- Favicons -->
+    <link 
+        rel="apple-touch-icon" 
+        sizes="180x180"
+        href="assests/icons/apple-touch.icon.png"
+    />
+    <link 
+    rel="apple-touch-icon"
+    type="image/png"
+    sizes="32x32"
+    href="assests/icons/favicon-32x32.png"
+    />
+    
+    <!-- Animate CSS CDN -->
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <title>Indigo | Web Developer</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1>INDIGO</h1>
+        <ul class="navigation">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="padburguer"><a href="#contact" class="nav-link">Contact</a></li>
+            
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <img src="assets/images/indigo_hero.svg" 
+        alt="indigo"
+        loading="lazy"
+        class="hero-img"
+        />
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-title">About Me</h2>
+            <p class="bio-test">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+                dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+                inventore tempore minus nemo, iste ullam illo laboriosam maiores
+                repudiandae quos!
+            </p>
+        </div>
+    </section>
+
+    <!-- More about-->
+    <section class="more-about">
+        <h2>More About</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem suscipit illum quos ipsam vel ut, illo numquam rerum aut at alias ex adipisci dignissimos hic! Velit dolorum natus voluptates, exercitationem tempore optio consequuntur sapiente enim quisquam, accusantium veritatis aperiam aliquam ab illo accusamus eaque voluptatem? Omnis ut maxime numquam quo?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel similique, consectetur architecto animi reprehenderit esse quia nobis velit pariatur rem? Provident optio labore modi excepturi aut necessitatibus in quaerat sapiente.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eligendi maxime voluptas aliquid voluptatem mollitia magni facilis molestiae facere eveniet tempore iusto qui, officia iste placeat. Aut, magnam, voluptates commodi culpa quaerat quisquam placeat debitis facere ipsam adipisci similique, labore officia assumenda veniam nobis. Incidunt repellendus reprehenderit, quibusdam obcaecati corporis provident error vero accusamus in possimus non architecto. Ratione totam quisquam dignissimos incidunt veritatis magnam sint quis reiciendis modi sit sequi omnis obcaecati, quibusdam molestiae deleniti minus non doloremque nulla?
+        </p>
+    </section>
+
+    <!-- Skills section-->
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My Top Skills</h2>
+
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
+                    <img
+                    src="assets/icons/icons8-html-5.svg" 
+                    alt="html-icon"
+                    loading="lazy"
+                    class="icon icon-card"
+                    />
+                </a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+                    <img
+                    src="assets/icons/icons8-css3.svg" 
+                    alt="css3-icon"
+                    loading="lazy"
+                    class="icon icon-card"
+                    />
+                </a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                 <img
+                 src="assets/icons/icons8-javascript.svg" 
+                 alt="javascript-icon"
+                 loading="lazy"
+                 class="icon icon-card"
+                 />
+                </a>
+            </div>
+
+            <div class="second-set animate__animated animate__pulse">
+                <img
+                 src="assets/icons/icons8-git.svg" 
+                 alt="github-icon"
+                 loading="lazy"
+                 class="icon icon-card"
+                 />
+                 <img
+                 src="assets/icons/icons8-bootstrap.svg" 
+                 alt="bootstrap-icon"
+                 loading="lazy"
+                 class="icon icon-card"
+                 />
+                 <img
+                 src="assets/icons/icons8-react-native.svg"
+                 alt="react-native-icon"
+                 loading="lazy"
+                 class="icon icon-card"
+                 />
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+            <!-- Project #1: WEB PORTFOLIO -->
+            <div class="project-container project-card">
+                <img 
+                src="assets/images/portfolio_project.PNG" 
+                alt="web-portfolio"
+                loading="lazy"
+                class="project-pic"
+                />
+                <h3 class="project-title">WEB Portfolio</h3>
+                <p class="project-details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iure ut sed? A ullam dolores aliquam eius magni ducimus veritatis.
+                </p>
+                <a href="#" target="_blank" class="project-link">Check it out</a>
+            </div>
+            <!-- Project #2: LOADING SCREEN -->
+            <div class="project-container project-card">
+                <img src="assets/images/loading_project.PNG" 
+                alt="loading-screen"
+                loading="lazy"
+                class="project-pic"
+                />
+                <h3 class="project-title">Loading Screen</h3>
+                <p class="project-details">
+                    Lorem ipsum dolor elit. Consequuntur voluptatibus impedit doloribus velit, iste natus magni veritatis sapiente fugiat suscipit.
+                </p>
+                <a href="#" target="_blank" class="project-link">Check it out</a>
+            </div>
+            <!-- Project #3: COMPANY WEB-->
+            <div class="project-container project-card">
+                <img 
+                src="assets/images/companyweb_projecy.PNG" 
+                alt="web-company"
+                loading="lazy"
+                class="project-pic"
+                />
+                <h3 class="project-title">Company WEB</h3>
+                <p class="project-details">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, at asperiores inventore nostrum ipsum quod! Veritatis sit tenetur doloremque dolores.
+                </p>
+                <a href="#" target="_blank" class="project-link">Check it out</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contract section -->
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xyylngw" method="POST">
+                    <!--Name div-->
+                    <div class="form-control">
+                        <label for="name">Name:</label>
+                        <input 
+                        type="text"
+                        id="name"
+                        name="sender-name"
+                        placeholder="Enter Your Name"
+                        class="input-field"
+                        required
+                        />
+                    </div>
+                    <!--Email div-->
+                    <div class="form-control">
+                        <label for="email">Email:</label>
+                        <input 
+                        type="text"
+                        id="email"
+                        name="sender-email"
+                        placeholder="Enter Your Email"
+                        class="input-field"
+                        required
+                        />
+                    </div>
+                    <!--Message div-->
+                    <div class="form-control">
+                        <label for="message">Message:</label>
+                        <textarea
+                        id="message"
+                        cols="60"
+                        rows="10"
+                        name="message"
+                        placeholder="Enter Your Message"
+                        class="input-field"
+                        required
+                        ></textarea>
+                    </div>
+                    <input 
+                    type="submit"
+                    value="Submit"
+                    id="submit-btn"
+                    class="submit-btn"
+                    />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+        <a href="#" target="_blank">
+            <img 
+            src="assets/icons/icons8-twitter-circled.gif"
+            alt="Twitter"
+            loading="lazy"
+            class="socicon">
+        </a>  
+        <a href="#" target="_blank">
+            <img 
+            src="assets/icons/icons8-instagram.gif" 
+            alt="Instagram"
+            loading="lazy"
+            class="socicon">
+        </a>
+        <a href="#" target="_blank">
+            <img 
+            src="assets/icons/icons8-linkedin-circled.gif" 
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon">
+        </a>
+        <a href="#" target="_blank">
+            <img 
+            src="assets/icons/icons8-github.gif" 
+            alt="Github"
+            loading="lazy"
+            class="socicon">
+        </a>
+    </div>
+
+    <!-- Scroll to top-->
+    <i class="scroll-up" id="scroll-up">
+        <img 
+        src="assets/icons/icons8-upward-arrow.gif" 
+        loading="lazy"
+        alt="scroll-up"
+        class="soicon up-arrow"
+        >
+    </i>
+
+    <!-- Footer section -->
+    <footer>
+        <p class="copy">&copy; Copyright 2022</p>
+        <p class="copy">
+            Built with &#x2661; by
+            <a href="https://instagram.com/karimaguirre33" target="_blank">
+                Josue Aguirre (Indigo)
+            </a>
+        </p>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts-->
+    <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+</body>
+</html>
