@@ -4,6 +4,7 @@
     --font-family: "Montserrat", sans-serif;
     --bottom-margin: 1rem;
     --primary-color: rgb(255, 208, 0);
+    --secondary-color: rgb(255, 140, 0);
     --white-text: #fff;
     --black-text: #000;
     --spacing-web: 3.5rem;
@@ -59,7 +60,7 @@ html {
 /*nav links styling*/
 .navbar--links ul li a {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     font-family: var(--font-family);
     color: var(--white-text);
     margin-right: 1rem;
@@ -143,7 +144,7 @@ html {
 }
 
 .navbar--bars-btn.is-active:hover span {
-    background-color: orangered;
+    background-color: var(--secondary-color);
 }
 
 
@@ -214,6 +215,11 @@ html {
     padding: 1rem 2rem;
     margin-right: 1rem;
     border-radius: 0.3rem;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.hero--btn-left:hover{
+    background-color: var(--secondary-color);
 }
 
 .hero--btn-right{
@@ -226,6 +232,12 @@ html {
     padding: 1rem 2rem;
     border: 2px solid #fff;
     border-radius: 0.3rem;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.hero--btn-right:hover{
+    background-color: var(--white-text);
+    color: var(--black-text);
 }
 
 
@@ -292,6 +304,11 @@ html {
     border-radius: 0.3rem;
     color: var(--white-text);
     background-color: var(--primary-color);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.about-me--btn:hover {
+    background-color: var(--secondary-color);
 }
 
 
@@ -403,6 +420,7 @@ html {
     margin-right: 1rem;
     border: 0.2rem solid var(--primary-color);
     border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .best-services--service-card h6 {
@@ -571,6 +589,7 @@ html {
     border: 2px solid white;
     margin: 0 1rem;
     padding-bottom: 1.5rem;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .testimonials--text {
@@ -585,6 +604,8 @@ html {
 
 .box img {
     margin: 0 30%;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .testimonials--worker-name {
@@ -622,6 +643,7 @@ html {
 .news-container div img {
     width: 100%;
     margin: 0 1rem;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .news-container--title {
@@ -680,7 +702,7 @@ form {
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
-
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 form h3 {
@@ -689,7 +711,6 @@ form h3 {
     font-family: var(--font-family);
     margin-bottom: 1.5rem;
     font-weight: 800;
-
 }
 
 form input, form textarea {
@@ -715,6 +736,11 @@ form button {
     cursor: pointer;
     width: 50%;
     align-self: center;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+form button:hover {
+    background-color: var(--secondary-color);
 }
 
 
@@ -981,7 +1007,7 @@ footer {
         display: none; 
     }
 
-    .why-us div h5, h6, p {
+    .why-us div h5, .why-us div h6, .why-us div p {
         text-align: center;
     }
     
