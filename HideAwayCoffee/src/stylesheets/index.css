@@ -1,0 +1,333 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* Variables */
+:root {
+    /* Font Sizes */
+    --font-text: 1rem;
+    --font-title: 3rem;
+    --font-subtitle: 1.8rem;
+    /* Spacing */
+    --spacing-large: 5rem;
+    --spacing-mid: 3rem;
+    --spacing-small: 1.5rem;
+    /* Colors */
+    --primary-color: rgb(11, 11, 11);
+    --secondary-color: rgb(255, 255, 255);
+    --primary-bg-color: rgb(74, 44, 42);
+}
+
+
+
+/* Reset Preset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 300vh;
+}
+
+
+
+/* Navigation bar styling */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 7px 1px rgb(75, 75, 75);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem var(--spacing-large);
+}
+
+.nav-logo {
+    width: 120px;
+    height: 64px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links div{
+    display: flex;
+    align-items: center;
+    margin-left: var(--spacing-small);
+}
+
+.nav-links-a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-left: 0.7rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.nav-links-a:hover {
+    transition: all 0.3s;
+    color: var(--primary-bg-color);
+}
+
+.nav-links-icons {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+
+/*Hero banner section styling*/
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    background-size: cover;
+    background-position: center;
+    transition: all .6s ease-in-out;
+    animation: banner 28s infinite linear;
+    background-image: url("../images/Hero-1.jpg");
+}
+
+.banner-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color:var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(11, 11, 11, 0.2);
+}
+
+.banner-img {
+    transform: scale(1.3);
+    padding-bottom: 1rem;
+}
+
+.banner-title {
+    text-transform: uppercase;
+    font-size: 6rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+    text-align: center;
+}
+
+.banner-text {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-style: italic;
+    padding-bottom: 1.5rem;
+}
+
+.banner-button {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: var(--font-subtitle);
+    font-weight: 400;
+    border: var(--secondary-color) 2px solid;
+    padding: 1rem 2rem;
+    box-shadow: 0 3px 11px 1px rgb(75, 75, 75);
+}
+
+.banner-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+@keyframes banner {
+    0% {
+        background-image: url("../images/Hero-1.jpg"); 
+    }
+    20% {
+        background-image: url("../images/Hero-1.jpg"); 
+    }
+    21% {
+        background-image: url("../images/Hero-2.jpg"); 
+    }
+    40% {
+        background-image: url("../images/Hero-2.jpg"); 
+    }
+    41% {
+        background-image: url("../images/Hero-3.jpg"); 
+    }
+    60% {
+        background-image: url("../images/Hero-3.jpg"); 
+    }
+    61% {
+        background-image: url("../images/Hero-4.jpg"); 
+    }
+    80% {
+        background-image: url("../images/Hero-4.jpg"); 
+    }
+    81% {
+        background-image: url("../images/Hero-5.jpg"); 
+    }
+    100% {
+        background-image: url("../images/Hero-5.jpg"); 
+    }
+}
+
+
+
+/* About Section Styling */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    margin: var(--spacing-large);
+    gap: var(--spacing-small);
+}
+
+.about-img {
+    max-width: 100%;
+    box-shadow: 0 3px 11px 1px rgb(75, 75, 75);
+}
+
+.about-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -0.5rem;
+}
+
+.about-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+.about-team {
+    color: var(--primary-bg-color);
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.about-text {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    line-height: 1.3;
+    text-align: justify;
+}
+
+.about-catch-a {
+    color: var(--primary-bg-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.about-catch-b {
+    color: red;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    line-height: 1.3;
+}
+
+/* Location Section Styling */
+.location {
+    margin: 4rem var(--spacing-large);
+}
+
+.location-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    padding-bottom: var(--spacing-small);
+}
+
+iframe {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.location p {
+    margin-bottom: var(--spacing-mid);
+}
+
+.location-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: var(--spacing-small) var(--spacing-mid);
+    margin-left: 0.7rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+
+
+/* Slogan Section Styling*/
+.slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 7rem;
+}
+
+.slogan h3 {
+    font-size: var(--font-title);
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+}
+
+.slogan-heart {
+    width: 64px;
+    height: 64px;
+}
+
+
+
+/* Instagram Section Styling */
+.insta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    margin: var(--spacing-large);
+}
+
+.insta-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: end;
+    align-self: center;
+    
+}
+
+.insta-img {
+    width: 200px;
+    height: 200px;
+    margin-left: var(--spacing-mid);
+}
+
+.insta-img:hover {
+    transform: scale(1.2);
+    transition: all 0.6s;
+}
