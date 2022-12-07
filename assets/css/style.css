@@ -10,8 +10,9 @@
     --spacing-web: 3.5rem;
 }
 
-html {
+html,body {
     scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
 }
 
 *, ul {
