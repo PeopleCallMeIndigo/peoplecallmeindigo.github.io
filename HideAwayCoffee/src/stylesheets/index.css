@@ -453,12 +453,12 @@ footer {
 }
 
 .copy {
-    font-size: 0.4rem;
+    font-size: 0.7rem;
     margin-top: 0.5rem;
 }
 
 .copy a{
-    font-size: 0.4rem;
+    font-size: 0.7rem;
     color: var(--secondary-color);
 }
 
