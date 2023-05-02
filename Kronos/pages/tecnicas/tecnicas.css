@@ -1,0 +1,635 @@
+/* Google Fonts Import */
+/* Poppins Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800&display=swap');
+
+/* Variables */
+:root {
+    /* Font */
+    --family: 'Poppins', sans-serif;
+    --header: 6rem;
+    --title: 2.5rem;
+    --sub-title: 1.5rem;
+    --text: 1.1rem;
+    /* Spacing */
+    --spacing-content: 10%;
+    --spacing-large: 3rem;
+    --spacing-normal: 2rem;
+    --spacing-mobile: 1.5rem;
+    --spacing-small: 1rem;
+    --spacing-micro: 0.5rem;
+    /* Colors */
+    --black: #000;
+    --white: #fff;
+    --main-color: rgb(251, 216, 4);
+    --secondary-color: #404040;
+    /* Transitions */
+    --transitions-default: all 0.4s ease-in-out;
+    --transitions-slow: all 0.6s ease-in-out;
+    /* Shadows */
+    --layered-shadow: 
+    0 1px 1px hsl(0deg 0% 0% / 0.077),
+    0 2px 2px hsl(0deg 0% 0% / 0.077),
+    0 4px 4px hsl(0deg 0% 0% / 0.077),
+    0 8px 8px hsl(0deg 0% 0% / 0.077),
+    0 12px 12px hsl(0deg 0% 0% / 0.077);
+}
+
+
+
+/* HTML Reset */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* Introducción Section Styling */
+.intro {
+    width: 100%;
+    padding: 3% var(--spacing-content);
+}
+
+.intro--line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 0.5rem 40%;
+    margin-bottom: -1rem;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.intro--title {
+    font-size: 3rem;
+    font-family: var(--family);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000;
+    margin: 1.3rem 0;
+    transition: var(--transitions-default);
+    text-align: center;
+}
+
+.intro--text {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 400;
+    color: #000;
+    margin-top: 2rem;
+}
+
+
+
+/* Técnicas Section Styling */
+.tecnicas {
+    width: 100%;
+    padding: 3% var(--spacing-content);
+}
+
+.tecnicas--line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 0.5rem;
+    margin-bottom: -0.8rem;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.tecnicas--title {
+    font-size: 1.8rem;
+    font-family: var(--family);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000;
+    margin: 1.3rem 0;
+    transition: var(--transitions-default);
+}
+
+.tecnicas-container-m {
+    display: none;
+}
+
+.tecnicas-container-d {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 3rem;
+    margin: 5% 0;
+}
+
+.tecnicas-container-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+    padding: 1.5rem;
+    border: 5px solid #000;
+    box-shadow: var(--layered-shadow);
+    transition: var(--transitions-default);
+}
+
+.tecnicas-container-column:hover {
+    transform: scale(1.03);
+    transition: var(--transitions-default);
+}
+
+.tecnicas-container-box {
+    margin: 3rem 0;
+}
+
+.tecnicas-container-column--title{
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 800;
+    color: #000;
+    text-align: start;
+}
+
+.tecnicas-container-column--text {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 400;
+    color: #000;
+    text-align: justify;
+}
+
+.tecnicas-container-column--img {
+    transition: var(--transitions-default);
+    box-shadow: var(--layered-shadow);
+    border: 5px solid #000;
+    border-radius: 80px;
+}
+
+.tecnicas-container-column--img:hover {
+    transform: scale(1.06);
+    transition: var(--transitions-default);
+}
+
+
+
+/* Otro Procesos Section Styling */
+.procesos {
+    width: 100%;
+    padding: 0 var(--spacing-content);
+}
+
+.procesos--line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 0.5rem;
+    margin-bottom: -0.8rem;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.procesos--title {
+    font-size: 1.8rem;
+    font-family: var(--family);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000;
+    margin: 1.3rem 0;
+    transition: var(--transitions-default);
+}
+
+.procesos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.procesos-container-card {
+    border: 5px solid #000;
+    box-shadow: var(--layered-shadow);
+    transition: var(--transitions-default);
+}
+
+.procesos-container-card:hover {
+    transform: scale(1.03);
+    transition: var(--transitions-default);
+}
+
+.procesos-container-card--title {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    margin: 1.3rem 0;
+    transition: var(--transitions-default);
+}
+
+.procesos-container-card--text {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 400;
+    text-align: justify;
+    color: #000;
+    margin: 1.3rem 1rem;
+    transition: var(--transitions-default);
+}
+
+
+
+/* Catalogo Section Styling */
+.catalogo {
+    width: 100%;
+    padding: 5% 5%;
+}
+
+.catalogo--line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 0.5rem 40%;
+    margin-bottom: -0.5rem;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.catalogo--title {
+    font-size: 3rem;
+    font-family: var(--family);
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    margin: 1rem 0;
+    transition: var(--transitions-default);
+}
+
+.catalogo--text {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.catalogo-arrows-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogo-arrows--img {
+    width: 80px;
+    height: 70px;
+}
+
+.catalogo-arrows-container--text {
+    font-size: 0.7rem;
+    font-family: var(--family);
+    font-weight: 400;
+    color: #ff0000;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.catalogo-info--link-m {
+    display: none;
+}
+
+.catalogo-info--text-m {
+    display: none;
+    font-size: 0.7rem;
+    font-family: var(--family);
+    font-weight: 400;
+    color: #ff0000;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#book {
+    margin: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 135vh;
+    z-index: 55;
+}
+
+#book .turn-page {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#book div {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;       
+}
+
+/* Mobile Responsive Styling */
+@media only screen and (min-width: 220px) and (max-width: 900px) {
+
+    /* Introducción Section Styling */
+    .intro {
+        width: 100%;
+        padding: 3% var(--spacing-content);
+        padding-top: 6rem;
+    }
+
+    .intro--line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: 0.5rem 25%;
+        margin-bottom: -0.5rem;
+        border-bottom: 3px solid var(--main-color);
+    }
+
+    .intro--title {
+        font-size: 3rem;
+        font-family: var(--family);
+        font-weight: 800;
+        line-height: 1.1;
+        text-transform: uppercase;
+        color: #000;
+        margin: 1.8rem 0;
+        transition: var(--transitions-default);
+        text-align: center;
+    }
+
+    .intro--text {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 400;
+        text-align: justify;
+        color: #000;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+
+
+    /* Técnicas Section Styling */
+    .tecnicas {
+        width: 100%;
+        padding: 3% var(--spacing-content);
+    }
+
+    .tecnicas--line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        margin: 0.5rem;
+        margin-bottom: -0.8rem;
+        border-bottom: 3px solid var(--main-color);
+    }
+
+    .tecnicas--title {
+        font-size: 1.8rem;
+        font-family: var(--family);
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #000;
+        margin: 1.3rem 0;
+        transition: var(--transitions-default);
+    }
+
+    .tecnicas-container-m {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tecnicas-images-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tecnicas-container-d {
+        display: none;
+    }
+
+    .tecnicas-container-columnn {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+        margin-top: 1rem;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        transition: var(--transitions-default);
+    }
+
+    .tecnicas-container-column {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        place-items: center;
+        margin-top: 1rem;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        transition: var(--transitions-default);
+    }
+
+    .tecnicas-container-column:hover {
+        transform: scale(1);
+        transition: var(--transitions-default);
+    }
+
+    .tecnicas-container-column--text {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 400;
+        color: #000;
+        text-align: justify;
+    }
+
+    .tecnicas-container-column--img {
+        width: 80px;
+        margin: 0 0.5rem;
+        transition: var(--transitions-default);
+        box-shadow: var(--layered-shadow);
+        border: none;
+        border-radius: 80px;
+    }
+
+    .tecnicas-container-column--img:hover {
+        transform: scale(1.06);
+        transition: var(--transitions-default);
+    }
+
+
+
+    /* Otro Procesos Section Styling */
+    .procesos {
+        width: 100%;
+        padding: 0;
+    }
+
+    .procesos--line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        margin-left: 10%;
+        margin-bottom: -0.8rem;
+        border-bottom: 3px solid var(--main-color);
+    }
+
+    .procesos--title {
+        font-size: 1.8rem;
+        font-family: var(--family);
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #000;
+        margin: 1.3rem 0;
+        margin-left: 10%;
+        transition: var(--transitions-default);
+    }
+
+    .procesos-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 var(--spacing-content);
+    }
+
+    .procesos-container-card {
+        border: none;
+        background-color: #f4f4f4;
+        box-shadow: var(--layered-shadow);
+        transition: var(--transitions-default);
+    }
+
+    .procesos-container-card:hover {
+        transform: scale(1.03);
+        transition: var(--transitions-default);
+    }
+
+    .procesos-container-card--title {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 600;
+        text-align: center;
+        color: #000;
+        margin: 1.3rem 0;
+        transition: var(--transitions-default);
+    }
+
+    .procesos-container-card--text {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 400;
+        text-align: justify;
+        color: #000;
+        margin: 1.3rem 1rem;
+        transition: var(--transitions-default);
+    }
+
+
+
+    /* Catalogo Section Styling */
+    .catalogo {
+        width: 100%;
+        padding: 15% 0;
+    }
+
+    .catalogo--line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        margin: 0.5rem 40%;
+        margin-bottom: 0;
+        border-bottom: 3px solid var(--main-color);
+    }
+
+    .catalogo--title {
+        font-size: 2rem;
+        font-family: var(--family);
+        font-weight: 800;
+        line-height: 1.1;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000;
+        margin: 1rem 0;
+        transition: var(--transitions-default);
+    }
+
+    .catalogo--text {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 400;
+        color: #000;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .catalogo-arrows-container--text {
+        display: none;
+        font-size: 0.7rem;
+        font-family: var(--family);
+        font-weight: 400;
+        color: #ff0000;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .catalogo-info--link-m {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .catalogo-info--text-m {
+        display: block;
+        font-size: 0.7rem;
+        font-family: var(--family);
+        font-weight: 400;
+        color: #ff0000;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    #book {
+        margin: 5% 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70vh;
+        z-index: 55;
+    }
+
+    #book .turn-page {
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+    }
+
+    #book div {
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;       
+    }
+}
+
+/* Tablet Responsive Styling */
+@media only screen and (min-width: 501px) and (max-width: 1100px) {
+
+}

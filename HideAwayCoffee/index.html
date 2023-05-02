@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="HideAway Coffee is a friendly cafe located in London, United Kingdom">
+    <meta name="keywords" content="HideAway Coffee, Coffee, Cafe, Love, Find, London">
+    <meta name="author" content="HideAway Coffee">
+
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/x-icon" href="src/icons/favicon/fav-icon.png">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="src/stylesheets/index.css">
+
+    <title>HideAway Coffee</title>
+</head>
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <nav class="nav">
+            <a href="index.html">
+                <img 
+                src="src/icons/logo.png" 
+                alt="Hide Away Coffee Logo"
+                class="nav-logo"
+                loading="lazy"
+                />
+            </a>
+            <div class="nav-links">
+                <div>
+                    <a href="#about">
+                    <img 
+                    src="src/icons/coffee-beans.png" 
+                    alt="Group of people"
+                    class="nav-links-icons"
+                    loading="lazy"
+                    />
+                    </a>
+                    <a href="#about" class="nav-links-a">    
+                        About
+                    </a>
+                </div>
+                <div>
+                    <a href="#find">
+                    <img 
+                    src="src/icons/location.png" 
+                    alt="Pin Icon"
+                    class="nav-links-icons"
+                    loading="lazy"
+                    />
+                    </a>
+                    <a href="#find" class="nav-links-a">    
+                        Find Us
+                    </a>
+                </div>
+                <div>
+                    <a href="src/pages/gallery.html">
+                    <img 
+                    src="src/icons/gallery.png" 
+                    alt="Gallery Icon"
+                    class="nav-links-icons"
+                    loading="lazy"
+                    />
+                    </a>
+                    <a href="src/pages/gallery.html" class="nav-links-a f">    
+                        Gallery
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Hero Banner Section-->
+        <section class="banner">
+            <div class="banner-content">
+                <img 
+                src="src/icons/coffeeeees.png" 
+                alt="Coffees"
+                class="banner-img"
+                />
+                <h1 class="banner-title">HideAway Coffee</h1>
+                <p class="banner-text">Cafe in London</p>
+            
+                <a href="#find" class="banner-button" id="about">Find Us</a>
+            </div>
+        </section>
+
+        <!-- About Section-->
+        <section class="about">
+            <img 
+            src="src/images/About.jpg" 
+            alt="Team Picture"
+            class="about-img"
+            loading="lazy"
+            />
+            <div class="about-container">
+                <h2 class="about-title">About Us</h2>
+                <img 
+                    src="src/images/About.jpg" 
+                    alt="Team Picture"
+                    class="about-img-mobile"
+                    loading="lazy"
+                />
+                <p class="about-team">This is our team!</p>
+                <p class="about-text">The best service you will find in a cafe, keeping our customers 100% satisfied is our main priority. We provide them with delicious coffee from the most exotic countries from all around the globe. We also have wide variety of drinks and desserts. Thats all about us!</p>
+                <p class="about-catch-a">Come to Hide Away Coffee and see for yourself.</p>
+                <p class="about-catch-b">We are waiting for your coming!</p>
+            </div>
+        </section>
+
+        <!-- Slogan Section -->
+        <section class="slogan">
+            <h3>Coffee Made With Love</h3>
+            <img 
+            src="src/icons/heart.png" 
+            alt="Heart Icon"
+            class="slogan-heart"
+            id=find
+            />
+        </section>
+
+        <!-- Location Section -->
+        <section class="location">
+            <h4 class="location-title">Find Us</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.103606951656!2d-0.13743988390393522!3d51.51131517963581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876057cc8805b41%3A0x60c897012e57e344!2sHideaway%20Coffee!5e0!3m2!1sen!2smx!4v1669955391995!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="eager" id="map-google" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p><b>Adress:</b> 7 Farrier's Psge, London W1D 7DP, United Kingdom</p>
+            <a href="https://www.google.com/maps/dir//Hideaway+Coffee+7+Farrier's+Psge+London+W1D+7DP+Reino+Unido/@51.5113375,-0.1352386,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x4876057cc8805b41:0x60c897012e57e344" target="_blank" class="location-btn">Get Directions</a>
+        </section>
+
+        <!-- Working Hours -->
+        <section class="schedule">
+            <div class="slideshow-container">
+                <h4 class="slideshow-title">Working Hours</h4>
+                <div class="days-container">
+                    <span class="week" onclick="currentSlide(1)">Weekdays</span>
+                    <span class="week" onclick="currentSlide(2)">Weekends</span>
+                  </div>
+                <!-- Slide Weekdays -->
+                <div class="slide">
+                    <div class="slide-card">
+                        <p class="slide-card-day">
+                            Monday
+                        </p>
+                        <p class="slide-card-hours">
+                            8:00AM - 4:00PM
+                        </p>
+                        <img 
+                        src="src/icons/schedule-icons/Monday.png" 
+                        alt="Coffee Jug"
+                        class="slide-card-ico"
+                        loading="lazy"
+                        />
+                    </div>
+                    <div class="slide-card">
+                        <p class="slide-card-day">
+                            Tuesday
+                        </p>
+                        <p class="slide-card-hours">
+                            8:00AM - 4:00PM
+                        </p>
+                        <img 
+                        src="src/icons/schedule-icons/Tuesday.png" 
+                        alt="Latte"
+                        class="slide-card-ico"
+                        loading="lazy"
+                        />
+                    </div>
+                    <div class="slide-card">
+                        <p class="slide-card-day">
+                            Wednesday
+                        </p>
+                        <p class="slide-card-hours">
+                            8:00AM - 4:00PM
+                        </p>
+                        <img 
+                        src="src/icons/schedule-icons/Wednesday.png" 
+                        alt="Take Away Chocolate"
+                        class="slide-card-ico"
+                        loading="lazy"
+                        />
+                    </div>
+                    <div class="slide-card">
+                        <p class="slide-card-day">
+                            Thursday
+                        </p>
+                        <p class="slide-card-hours">
+                            8:00AM - 4:00PM
+                        </p>
+                        <img 
+                        src="src/icons/schedule-icons/Thurdaay.png" 
+                        alt="Hot Chocolate"
+                        class="slide-card-ico"
+                        loading="lazy"
+                        />
+                    </div>
+                    <div class="slide-card">
+                        <p class="slide-card-day">
+                            Friday
+                        </p>
+                        <p class="slide-card-hours">
+                            8:00AM - 4:00PM
+                        </p>
+                        <img 
+                        src="src/icons/schedule-icons/Friday.png" 
+                        alt="Iced Coffee"
+                        class="slide-card-ico"
+                        loading="lazy"
+                        />
+                    </div>
+                </div>
+
+                <!-- Slide Weekends-->
+                <div class="slide">
+                    <div class="slide-card">
+                        <p class="slide-card-day">
+                            Saturday
+                        </p>
+                        <p class="slide-card-hours">
+                            10:00AM - 4:00PM
+                        </p>
+                        <img 
+                        src="src/icons/schedule-icons/saturday.png" 
+                        alt="Couple Coffee"
+                        class="slide-card-ico"
+                        loading="lazy"
+                        />
+                    </div>
+                    <div class="slide-card">
+                        <p class="slide-card-day">
+                            Sunday
+                        </p>
+                        <p class="slide-card-hours">
+                            No Coffee :c
+                        </p>
+                        <img 
+                        src="src/icons/schedule-icons/sunday.png" 
+                        alt="Closed Sign"
+                        class="slide-card-ico"
+                        loading="lazy"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Instagram Link -->
+         <section class="insta">
+                <h5 class="insta-title">Please don't forget to follow us on Instagram</h5>
+                <img 
+                src="src/icons/Insta-badge-Bottom.png" 
+                alt="Instagram Verified"
+                class="insta-checked-ico"
+                loading="lazy"/>
+                <a href="https://www.instagram.com/hideawaycoffee/" target="_blank">                                                                                                                                                                        
+                    <img 
+                    src="src/icons/Insta-Botttom.gif"
+                    alt="Instagram Logo"
+                    class="insta-img"
+                    loading="lazy"
+                    />
+                </a>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; HideAway Coffee Copyright 2022</p>
+        <p class="copy">
+            Built with &#x2661; by
+            <a href="https://www.linkedin.com/in/karimaguirre/" target="_blank">
+                Josue Aguirre (Indigo)
+            </a>
+        </p>
+    </footer>
+
+    <!-- JavaScript Link-->
+    <script src="src/app/app.js"></script>
+</body>
+</html>

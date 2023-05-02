@@ -1,0 +1,1145 @@
+/* Google Fonts Import */
+/* Poppins Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800&display=swap');
+
+/* Variables */
+:root {
+    /* Font */
+    --family: 'Poppins', sans-serif;
+    --header: 6rem;
+    --title: 2.5rem;
+    --sub-title: 1.5rem;
+    --text: 1.1rem;
+    /* Spacing */
+    --spacing-content: 10%;
+    --spacing-large: 3rem;
+    --spacing-normal: 2rem;
+    --spacing-mobile: 1.5rem;
+    --spacing-small: 1rem;
+    --spacing-micro: 0.5rem;
+    /* Colors */
+    --black: #000;
+    --white: #fff;
+    --main-color: rgb(251, 216, 4);
+    --secondary-color: #404040;
+    /* Transitions */
+    --transitions-default: all 0.4s ease-in-out;
+    --transitions-slow: all 0.6s ease-in-out;
+    /* Shadows */
+    --layered-shadow: 
+    0 1px 1px hsl(0deg 0% 0% / 0.077),
+    0 2px 2px hsl(0deg 0% 0% / 0.077),
+    0 4px 4px hsl(0deg 0% 0% / 0.077),
+    0 8px 8px hsl(0deg 0% 0% / 0.077),
+    0 12px 12px hsl(0deg 0% 0% / 0.077);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* HTML Reset */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+
+/* Main Section Styling */
+/* Otros Servicios Section */
+.otros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3% var(--spacing-content);
+}
+
+.otros--line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 0.5rem 40%;
+    margin-bottom: -1rem;
+    border-bottom: 3px solid #404040;
+}
+
+.otros--title {
+    font-size: 3rem;
+    font-family: var(--family);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000;
+    margin: 1.3rem 0;
+    transition: var(--transitions-default);
+    text-align: center;
+}
+
+.otros-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+}
+
+.otros-container-left--subtitle {
+    font-size: 1.8rem;
+    font-family: var(--family);
+    font-weight: 800;
+    color: #000;
+    margin: 1.3rem 0;
+    transition: var(--transitions-default);
+}
+
+
+.otros-container-left--text {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 400;
+    color: #000;
+    margin-top: 2rem;
+}
+
+
+/* Intro Section Styling */
+.otros-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.otros-intro--line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0.5rem 0;
+    margin-bottom: -1rem;
+    border-top: 5px solid #404040;
+    margin-top: 5rem;
+}
+
+.otros-intro--img {
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.otros-intro-subtitle {
+    font-size: 1.8rem;
+    font-family: var(--family);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-color);
+    margin: 1.3rem 0;
+    transition: var(--transitions-default);
+}
+
+
+.otros-intro--text {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 400;
+    color: #000;
+    margin-top: 2rem;
+}
+
+.otros-intro--catch1 {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 600;
+    color: #000;
+    margin-top: 2rem;
+}
+
+.otros-intro--catch2 {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 600;
+    color: #000;
+}
+
+
+
+/* Redes Section Styling */
+.otros-redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.otros-redes--line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0.5rem 0;
+    margin-bottom: -1rem;
+    border-top: 5px solid #404040;
+    margin-top: 5rem;
+}
+
+.otros-redes--img {
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.otros-redes-subtitle {
+    font-size: 1.8rem;
+    font-family: var(--family);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-color);
+    margin: 1.3rem 0;
+    transition: var(--transitions-default);
+}
+
+
+.otros-redes--text {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 400;
+    color: #000;
+    margin-top: 2rem;
+}
+
+.wow {
+    margin-top: 2rem;
+}
+
+.otros-redes-list--text {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 0.2rem;
+}
+
+.otros-redes--catch1 {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 600;
+    color: #000;
+    margin-top: 2rem;
+}
+
+.otros-redes--catch2 {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 600;
+    color: #000;
+}
+
+
+
+/* Pautas Section Styling */
+.otros-pautas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.otros-pautas--line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0.5rem 0;
+    margin-bottom: -1rem;
+    border-top: 5px solid #404040;
+    margin-top: 5rem;
+}
+
+.otros-pautas--img {
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.otros-pautas-subtitle {
+    font-size: 1.8rem;
+    font-family: var(--family);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-color);
+    margin: 1.3rem 0;
+    transition: var(--transitions-default);
+}
+
+
+.otros-pautas--text {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 400;
+    color: #000;
+    margin-top: 2rem;
+}
+
+.otros-pautas--catch1 {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 600;
+    color: #000;
+    margin-top: 2rem;
+}
+
+.otros-pautas--catch2 {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 600;
+    color: #000;
+}
+
+
+
+/* Palabras Section Styling */
+.otros-palabras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.otros-palabras--line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0.5rem 0;
+    margin-bottom: -1rem;
+    border-top: 5px solid #404040;
+    margin-top: 5rem;
+}
+
+.otros-palabras--img {
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.otros-palabras-subtitle {
+    font-size: 1.8rem;
+    font-family: var(--family);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-color);
+    margin: 1.3rem 0;
+    transition: var(--transitions-default);
+}
+
+.otros-palabras--text {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 400;
+    color: #000;
+    margin-top: 2rem;
+}
+
+.otros-palabras--catch1 {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 600;
+    color: #000;
+    margin-top: 2rem;
+}
+
+.otros-palabras--catch2 {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 600;
+    color: #000;
+}
+
+
+
+/* Capturamos Section Styling */
+.otros-capturamos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.otros-capturamos--line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0.5rem 0;
+    margin-bottom: -1rem;
+    border-top: 5px solid #404040;
+    margin-top: 5rem;
+}
+
+.otros-capturamos--img {
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.otros-capturamos-subtitle {
+    font-size: 1.8rem;
+    font-family: var(--family);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-color);
+    margin: 1.3rem 0;
+    transition: var(--transitions-default);
+}
+
+.otros-capturamos--text {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 400;
+    color: #000;
+    margin-top: 2rem;
+}
+
+.otros-experiencia--catch1 {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 600;
+    color: #000;
+    margin-top: 2rem;
+}
+
+.otros-experiencia--catch2 {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 600;
+    color: #000;
+}
+
+
+
+/* Experiencia Section Styling */
+.otros-experiencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.otros-experiencia--line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0.5rem 0;
+    margin-bottom: -1rem;
+    border-top: 5px solid #404040;
+    margin-top: 5rem;
+}
+
+.otros-experiencia-title {
+    font-size: 3rem;
+    font-family: var(--family);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000;
+    margin: 1.3rem 0;
+    transition: var(--transitions-default);
+}
+
+.otros-experiencia-subtitle {
+    font-size: 1.8rem;
+    font-family: var(--family);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000;
+    margin: 1.3rem 0;
+    margin-top: 2rem;
+    transition: var(--transitions-default);
+}
+
+.otros-experiencia--text {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 400;
+    color: #000;
+    margin-top: 2rem;
+}
+
+.niba {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.otros-experiencia-subtitlee{
+    font-size: 1.8rem;
+    font-family: var(--family);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000;
+    margin: 1.3rem 0;
+    transition: var(--transitions-default);
+}
+
+.otros-experiencia-subtitle-2{
+    font-size: 1.8rem;
+    font-family: var(--family);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000;
+    margin: 1.3rem 0;
+    margin-left: 1rem;
+    transition: var(--transitions-default);
+}
+
+.otros-experiencia--text-2 {
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 400;
+    color: #000;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+
+/* Otros Servicio Right Section */
+.otros-container-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.otros-container-right-skipbox {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70px 70px 70px;
+    gap: 1.1rem;
+    margin-top: 1rem;
+}
+
+.otros-container-right-skipbox--btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+    box-shadow: var(--layered-shadow);
+    transition: var(--transitions-default);
+}
+
+.otros-container-right-skipbox--btn:hover {
+    transform: scale(1.05);
+    transition: var(--transitions-default);
+}
+
+.otros-container-right-skipbox--text {
+    font-size: 0.9;
+    font-family: var(--family);
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: orange;
+    margin-left: 0.8rem;
+}
+
+.otros-container-right-skipbox--img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+
+
+/* Whatsapp Button Section Styling */
+.otros-container-right-whatsapp {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    transition: var(--transitions-default);
+}
+
+.otros-container-right-whatsapp:hover {
+    transition: var(--transitions-default);
+    transform: scale(1.05);
+}
+
+.otros-container-right-whatsapp--img {
+    background-color: #efefef;
+    border-radius: 50%;
+    margin-left: -1rem;
+    box-shadow: var(--layered-shadow);
+}
+
+.otros-container-right-whatsapp--text {
+    background-color: #cdcdcd;
+    padding: 1.3rem 1.5rem;
+    padding-right: 2rem;
+    text-transform: uppercase;
+    font-size: var(--text);
+    font-family: var(--family);
+    font-weight: 400;
+    color: #000;
+    box-shadow: var(--layered-shadow);
+}
+
+
+
+/* Form Section Styling */
+.cotizacion-form {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 15%;
+    width: 100%;
+    margin-left: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #efefef;
+    margin-top: 3rem;
+    padding: 2rem 2.5rem;
+    box-shadow: var(--layered-shadow);
+    transition: var(--transitions-default);
+}
+
+form:hover {
+    transform: scale(1.03);
+    transition: var(--transitions-default);
+}
+
+form h4 {
+    font-size: 1.8rem;
+    font-family: var(--family);
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0.7rem 0;
+    transition: var(--transitions-default);
+}
+
+.cotizacion-form--line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0.5rem 0;
+    border-bottom: 2px solid #404040;
+    margin-bottom: 2rem
+}
+
+input, textarea {
+    font-family: var(--family);
+    font-size: var(--text);
+    width: 100%;
+    margin: 0.7rem var(--spacing-tiny);
+    margin-bottom: 0.8rem;
+    padding: 2rem var(--spacing-tiny);
+    padding-left: 0.5rem;
+    outline: none;
+    background: #dfdede;
+    border: 1px solid #cacaca;
+}
+
+.cotizacion-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cotizacion--file {
+    width: 100%;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.cotizacion--text {
+    font-size: 0.7rem;
+    font-family: var(--family);
+    font-weight: 400;
+    color: #d20000;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+button {
+    font-family: var(--family);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: var(--spacing-tiny) 0;
+    margin-top: 1.5rem;
+    padding: 0.3rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: #000;
+    outline: none;
+    cursor: pointer;
+    width: 45%;
+    align-self: flex-end;
+    transition: var(--transitions-default);
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.1);
+    transition: var(--transitions-default);
+}
+
+
+
+
+
+
+
+/* Mobile Responsive Styling */
+@media only screen and (min-width: 220px) and (max-width: 900px) {
+    
+    /* Main Section Styling */
+    /* Otros Servicios Section */
+    .otros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3% var(--spacing-content);
+        padding-top: 5rem;
+        padding-bottom: 0;
+    }
+
+    .otros--line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: 0.5rem 25%;
+        margin-bottom: -0.5rem;
+        border-bottom: 3px solid #404040;
+    }
+
+    .otros--title {
+        font-size: 3rem;
+        font-family: var(--family);
+        font-weight: 800;
+        line-height: 1.1;
+        text-transform: uppercase;
+        color: #000;
+        margin: 1.3rem 0;
+        transition: var(--transitions-default);
+        text-align: center;
+    }
+
+    .otros-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .otros-container-left--subtitle {
+        font-size: 1.8rem;
+        font-family: var(--family);
+        font-weight: 800;
+        color: #000;
+        margin: 1.3rem 0;
+        transition: var(--transitions-default);
+    }
+
+
+    .otros-container-left--text {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 400;
+        text-align: justify;
+        color: #000;
+        margin-top: 2rem;
+    }
+
+
+    /* Intro Section Styling */
+    .otros-intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .otros-intro--line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0.5rem 0;
+        margin-bottom: -1rem;
+        border-top: 5px solid #404040;
+        margin-top: 5rem;
+    }
+
+    .otros-intro--img {
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+
+    .otros-intro-subtitle {
+        font-size: 1.8rem;
+        font-family: var(--family);
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--main-color);
+        margin: 1.3rem 0;
+        transition: var(--transitions-default);
+    }
+
+
+    .otros-intro--text {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 400;
+        color: #000;
+        margin-top: 2rem;
+    }
+
+    .otros-intro--catch1 {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 600;
+        color: #000;
+        margin-top: 2rem;
+    }
+
+    .otros-intro--catch2 {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 600;
+        color: #000;
+    }
+
+
+
+    /* Redes Section Styling */
+    .otros-redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .otros-redes--img {
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+
+    .otros-redes-subtitle {
+        font-size: 1.8rem;
+        font-family: var(--family);
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--main-color);
+        margin: 1.3rem 0;
+        transition: var(--transitions-default);
+    }
+
+
+    .otros-redes--text {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 400;
+        color: #000;
+        margin-top: 2rem;
+    }
+
+    .wow {
+        margin-top: 2rem;
+    }
+
+    .otros-redes-list--text {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 400;
+        color: #000;
+        margin-bottom: 0.2rem;
+    }
+
+    .otros-redes--catch1 {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 600;
+        color: #000;
+        margin-top: 2rem;
+    }
+
+    .otros-redes--catch2 {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 600;
+        color: #000;
+    }
+
+
+
+    /* Pautas Section Styling */
+    .otros-pautas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .otros-pautas--img {
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+
+    .otros-pautas-subtitle {
+        font-size: 1.8rem;
+        font-family: var(--family);
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--main-color);
+        margin: 1.3rem 0;
+        transition: var(--transitions-default);
+    }
+
+
+    .otros-pautas--text {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 400;
+        color: #000;
+        margin-top: 2rem;
+    }
+
+    .otros-pautas--catch1 {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 600;
+        color: #000;
+        margin-top: 2rem;
+    }
+
+    .otros-pautas--catch2 {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 600;
+        color: #000;
+    }
+
+
+
+    /* Palabras Section Styling */
+    .otros-palabras {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .otros-palabras--img {
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+
+    .otros-palabras-subtitle {
+        font-size: 1.8rem;
+        font-family: var(--family);
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--main-color);
+        margin: 1.3rem 0;
+        transition: var(--transitions-default);
+    }
+
+    .otros-palabras--text {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 400;
+        color: #000;
+        margin-top: 2rem;
+    }
+
+    .otros-palabras--catch1 {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 600;
+        color: #000;
+        margin-top: 2rem;
+    }
+
+    .otros-palabras--catch2 {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 600;
+        color: #000;
+    }
+
+
+
+    /* Capturamos Section Styling */
+    .otros-capturamos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .otros-capturamos--img {
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+
+    .otros-capturamos-subtitle {
+        font-size: 1.8rem;
+        font-family: var(--family);
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--main-color);
+        margin: 1.3rem 0;
+        transition: var(--transitions-default);
+    }
+
+    .otros-capturamos--text {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 400;
+        color: #000;
+        margin-top: 2rem;
+    }
+
+    .otros-capturamos--catch1 {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 600;
+        color: #000;
+        margin-top: 2rem;
+    }
+
+    .otros-capturamos--catch2 {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 600;
+        color: #000;
+    }
+
+
+
+    /* Experiencia Section Styling */
+    .otros-experiencia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .otros-experiencia--line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0.5rem 0;
+        margin-bottom: -1rem;
+        border-top: 5px solid #404040;
+        margin-top: 5rem;
+    }
+
+    .otros-experiencia-title {
+        font-size: 3rem;
+        font-family: var(--family);
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #000;
+        margin: 1.3rem 0;
+        transition: var(--transitions-default);
+    }
+
+    .otros-experiencia-subtitle {
+        font-size: 1.8rem;
+        font-family: var(--family);
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #000;
+        margin: 1.3rem 0;
+        margin-top: 2rem;
+        transition: var(--transitions-default);
+    }
+
+    .otros-experiencia--text {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 400;
+        color: #000;
+        margin-top: 2rem;
+    }
+
+    .niba {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+    }
+
+    .otros-experiencia-subtitlee{
+        font-size: 1.8rem;
+        font-family: var(--family);
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #000;
+        margin: 1.3rem 0;
+        transition: var(--transitions-default);
+    }
+
+    .otros-experiencia-subtitle-2{
+        font-size: 1.8rem;
+        font-family: var(--family);
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #000;
+        margin: 1.3rem 0;
+        margin-left: 1rem;
+        transition: var(--transitions-default);
+    }
+
+    .otros-experiencia--text-2 {
+        font-size: var(--text);
+        font-family: var(--family);
+        font-weight: 400;
+        color: #000;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+    }
+
+
+
+    /* Otros Servicio Right Section */
+    .otros-container-right {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

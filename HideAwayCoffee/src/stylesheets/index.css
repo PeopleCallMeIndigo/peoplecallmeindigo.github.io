@@ -1,0 +1,911 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* Variables */
+:root {
+    /* Font Sizes */
+    --font-text: 1rem;
+    --font-title: 3rem;
+    --font-subtitle: 1.8rem;
+    /* Spacing */
+    --spacing-large: 5rem;
+    --spacing-mid: 3rem;
+    --spacing-small: 1.5rem;
+    /* Colors */
+    --primary-color: rgb(11, 11, 11);
+    --secondary-color: rgb(255, 255, 255);
+    --primary-bg-color: rgb(74, 44, 42);
+}
+
+
+
+/* Reset Preset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* Navigation bar styling */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 7px 1px rgb(75, 75, 75, 0.5);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem var(--spacing-large);
+}
+
+.nav-logo {
+    width: 128px;
+    height: 64px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links div{
+    display: flex;
+    align-items: center;
+    margin-left: var(--spacing-small);
+}
+
+.nav-links-a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-left: 0.7rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.nav-links-a:hover {
+    transition: all 0.3s;
+    color: var(--primary-bg-color);
+}
+
+.nav-links-icons {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+
+/*Hero banner section styling*/
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    background-size: cover;
+    background-position: center;
+    transition: all .6s ease-in-out;
+    animation: banner 28s infinite linear;
+    background-image: url("../images/Hero-1.jpg");
+}
+
+.banner-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color:var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(11, 11, 11, 0.2);
+}
+
+.banner-img {
+    transform: scale(1.3);
+    padding-bottom: 1rem;
+}
+
+.banner-title {
+    text-transform: uppercase;
+    font-size: 6rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+    text-align: center;
+}
+
+.banner-text {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-style: italic;
+    padding-bottom: 1.5rem;
+}
+
+.banner-button {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: var(--font-subtitle);
+    font-weight: 400;
+    border: var(--secondary-color) 2px solid;
+    padding: 1rem 2rem;
+    box-shadow: 0 3px 11px 1px rgb(75, 75, 75);
+}
+
+.banner-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+@keyframes banner {
+    0% {
+        background-image: url("../images/Hero-1.jpg"); 
+    }
+    20% {
+        background-image: url("../images/Hero-1.jpg"); 
+    }
+    21% {
+        background-image: url("../images/Hero-2.jpg"); 
+    }
+    40% {
+        background-image: url("../images/Hero-2.jpg"); 
+    }
+    41% {
+        background-image: url("../images/Hero-3.jpg"); 
+    }
+    60% {
+        background-image: url("../images/Hero-3.jpg"); 
+    }
+    61% {
+        background-image: url("../images/Hero-4.jpg"); 
+    }
+    80% {
+        background-image: url("../images/Hero-4.jpg"); 
+    }
+    81% {
+        background-image: url("../images/Hero-5.jpg"); 
+    }
+    100% {
+        background-image: url("../images/Hero-5.jpg"); 
+    }
+}
+
+
+
+/* About Section Styling */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    margin: var(--spacing-large);
+    gap: var(--spacing-small);
+}
+
+.about-img {
+    max-width: 100%;
+    box-shadow: 0 3px 11px 1px rgb(75, 75, 75);
+}
+
+.about-img-mobile {
+    display: none;
+}
+
+.about-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -0.5rem;
+}
+
+.about-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+.about-team {
+    color: var(--primary-bg-color);
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.about-text {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    line-height: 1.3;
+    text-align: justify;
+}
+
+.about-catch-a {
+    color: var(--primary-bg-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.about-catch-b {
+    color: red;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    line-height: 1.3;
+}
+
+/* Location Section Styling */
+.location {
+    margin: 4rem var(--spacing-large);
+    margin-bottom: 6rem;
+}
+
+.location-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    padding-bottom: var(--spacing-small);
+}
+
+iframe {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.location p {
+    margin-bottom: var(--spacing-mid);
+}
+
+.location-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: var(--spacing-small) var(--spacing-mid);
+    margin-left: 0.7rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.location-btn:hover {
+    background-color: var(--primary-bg-color);
+    transition: all 0.3s;
+}
+
+
+
+/* Slogan Section Styling*/
+.slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 7rem;
+}
+
+.slogan h3 {
+    font-size: var(--font-title);
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+}
+
+.slogan-heart {
+    width: 64px;
+    height: 64px;
+}
+
+
+
+/* Working Hours Section Styling */
+.schedule {
+    height: 100%;
+    background-color: var(--primary-color);
+    padding-bottom: var(--spacing-large);
+}
+
+.slideshow-container {
+    text-align: center;
+}
+ 
+.slideshow-title {
+    font-size: var(--font-title);
+    font-weight: 800;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: var(--spacing-mid);
+}
+
+.days-container {
+    text-align: center;
+    margin-bottom: var(--spacing-small);
+  }
+  
+.week {
+    cursor: pointer;
+    background-color: var(--primary-bg-color);
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    padding: 0.5rem var(--spacing-small);
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.week:active {
+    transform: scale(1.1);
+}
+
+.week:hover {
+    transform: scale(1.1);
+}
+
+.active, .week:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.slide {
+    margin: 0 var(--spacing-large);
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    gap: 2.5rem;
+}
+
+.slide-card {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    border-radius: 0.3rem;
+    padding: var(--spacing-small);
+    box-shadow: 0 3px 11px 1px rgb(75, 75, 75);
+}
+
+.slide-card:active {
+    transform: scale(1.3);
+    transition: all 0.5s;
+}
+
+.slide-card:hover {
+    transition: all 0.3s;
+    color: var(--secondary-color);
+    background-color: var(--primary-bg-color);
+}
+
+.slide-card-title {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.slide-card-hours {
+    font-weight: 700;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+}
+
+.slide-card-img {
+    color: #a5a5a5;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Instagram Section Styling */
+.insta {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-large) 20%;
+}
+
+.insta-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: end;
+    align-self: center;
+    color: var(--primary-color);
+    margin-right: 0.5rem ;
+}
+
+.insta-checked-ico {
+    width: 20px;
+    height: 20px;
+    margin-top: 0.3rem;
+}
+
+.insta-img {
+    width: 150px;
+    height: 150px;
+    margin-left: var(--spacing-mid);
+}
+
+.insta-img:hover {
+    transform: scale(1.3);
+    transition: all 0.6s;
+}
+
+
+
+/* Footer Section Stlying*/
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: var(--spacing-small);
+}
+
+.copy {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+}
+
+.copy a{
+    font-size: 0.7rem;
+    color: var(--secondary-color);
+}
+
+
+
+
+
+
+
+
+
+
+/* Mobile Responsive Adaptability*/
+@media screen and (max-width: 420px) {
+    /*Navigation Bar Mobile Styling*/
+    .nav {
+        margin: 0;
+        padding: 0.5rem var(--spacing-small);
+    }
+
+    .nav-logo {
+        width: 100px;
+        height: 50px;
+    }
+
+    .nav-links-a {
+        margin-left: 0rem;
+        font-size: 0.8rem;
+    }
+
+    .nav-links-icons {
+        display: none;
+    }
+
+    /* Banner Mobile Styling */
+    .banner {
+        position:relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .banner-content {
+        width: 100%;
+        height: 100%;
+        color:var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(11, 11, 11, 0.2);
+    }
+
+    .banner-title {
+        margin: var(--spacing-small) 0;
+        font-size: 3.7rem;
+    }
+
+    .banner-button {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    @keyframes banner {
+        0% {
+            background-image: url("../images/mobile-hero/mobile-hero1.jpg"); 
+        }
+        20% {
+            background-image: url("../images/mobile-hero/mobile-hero1.jpg"); 
+        }
+        21% {
+            background-image: url("../images/mobile-hero/mobile-hero2.jpg"); 
+        }
+        40% {
+            background-image: url("../images/mobile-hero/mobile-hero2.jpg"); 
+        }
+        41% {
+            background-image: url("../images/mobile-hero/mobile-hero3.jpg"); 
+        }
+        60% {
+            background-image: url("../images/mobile-hero/mobile-hero3.jpg"); 
+        }
+        61% {
+            background-image: url("../images/mobile-hero/mobile-hero4.jpg"); 
+        }
+        80% {
+            background-image: url("../images/mobile-hero/mobile-hero4.jpg"); 
+        }
+        81% {
+            background-image: url("../images/mobile-hero/mobile-hero5.jpg"); 
+        }
+        100% {
+            background-image: url("../images/mobile-hero/mobile-hero5.jpg"); 
+        }
+    }
+
+    /*About Us Mobile Styling*/
+    .about {
+        display: block;
+        margin: var(--spacing-large) var(--spacing-small);
+        padding: 0;
+    }
+
+    .about-title {
+        text-align: center;
+        font-size: 3.9rem;
+        font-weight: 600;
+    }
+
+    .about-team {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: var(--spacing-small);
+    }
+
+    .about-text {
+        font-size: 1.1rem;
+    }
+
+    .about-catch-a {
+        display: none;
+    }
+
+    .about-catch-b {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .about-img-mobile {
+        display:flex;
+        max-width: 100%;
+        box-shadow: 0 3px 11px 1px rgb(75, 75, 75);
+    }
+
+    /* Slogan Mobile Styling */
+    .slogan {
+        display: block;
+        padding: var(--spacing-large) var(--spacing-small);
+        text-align: center;
+    }
+    .slogan-heart {
+        margin-top: var(--spacing-small);
+    }
+
+    .slide {
+        margin: 0 var(--spacing-large);
+        display: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 2.5rem;
+    }
+
+    /* Location Mobile Styling */
+    .location {
+        margin: var(--spacing-large) var(--spacing-small);
+        padding: 0;
+        text-align: center;
+    }
+
+    .location-title {
+        font-size: 3.9rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    iframe {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    }
+
+    /* Schedule mobile styling */
+    .slide {
+        margin: 0 var(--spacing-small);
+        padding: 0;
+    }
+
+    .slide-card:active {
+        transform: scale(1.1);
+    }
+
+    .week:active {
+        transform: scale(1.1);
+    }
+
+    /*Instagram mobile Styling*/
+    .insta {
+        display: block;
+    }
+
+    .insta-title {
+        text-align: center;
+        margin-bottom: var(--spacing-small);
+    }
+
+    .insta-checked-ico {
+        display: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+/* Tablet Responsive Adaptability*/
+@media screen and (min-width:600px) and (max-width:850px) {
+
+    /*Navigation Bar Tablet Styling*/
+    .nav {
+        margin: 0;
+        padding: 0.5rem var(--spacing-mid);
+    }
+
+    .nav-logo {
+        width: 160px;
+        height: 80px;
+    }
+
+    .nav-links-a {
+        margin-left: 0.5rem;
+        font-size: 1.3rem;
+    }
+
+    .nav-links-icons {
+        display: flex;
+    }
+
+    /* Banner Mobile Styling */
+    .banner {
+        position:relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .banner-content {
+        width: 100%;
+        height: 100%;
+        color:var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(11, 11, 11, 0.2);
+    }
+
+    .banner-title {
+        margin: var(--spacing-small) 0;
+        font-size: 4.3rem;
+    }
+
+    .banner-text {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .banner-button {
+        font-size: 2rem;
+        padding: var(--spacing-small) 2rem;
+    }
+
+    @keyframes banner {
+        0% {
+            background-image: url("../images/mobile-hero/mobile-hero1.jpg"); 
+        }
+        20% {
+            background-image: url("../images/mobile-hero/mobile-hero1.jpg"); 
+        }
+        21% {
+            background-image: url("../images/mobile-hero/mobile-hero2.jpg"); 
+        }
+        40% {
+            background-image: url("../images/mobile-hero/mobile-hero2.jpg"); 
+        }
+        41% {
+            background-image: url("../images/mobile-hero/mobile-hero3.jpg"); 
+        }
+        60% {
+            background-image: url("../images/mobile-hero/mobile-hero3.jpg"); 
+        }
+        61% {
+            background-image: url("../images/mobile-hero/mobile-hero4.jpg"); 
+        }
+        80% {
+            background-image: url("../images/mobile-hero/mobile-hero4.jpg"); 
+        }
+        81% {
+            background-image: url("../images/mobile-hero/mobile-hero5.jpg"); 
+        }
+        100% {
+            background-image: url("../images/mobile-hero/mobile-hero5.jpg"); 
+        }
+    }
+
+    /*About Us Mobile Styling*/
+    .about {
+        display: block;
+        margin: var(--spacing-large) var(--spacing-mid);
+        padding: 0;
+    }
+
+    .about-title {
+        text-align: center;
+        font-size: 4.3rem;
+        font-weight: 600;
+    }
+
+    .about-team {
+        font-size: 2.2rem;
+        text-align: center;
+        padding-top: var(--spacing-small);
+    }
+
+    .about-text {
+        font-size: 1.5rem;
+    }
+
+    .about-catch-a {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .about-catch-b {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .about-img-mobile {
+        display:flex;
+        max-width: 100%;
+        box-shadow: 0 3px 11px 1px rgb(75, 75, 75);
+    }
+
+    /* Slogan Mobile Styling */
+    .slogan {
+        display: block;
+        padding: var(--spacing-large) var(--spacing-small);
+        text-align: center;
+    }
+
+    .slogan h3 {
+        font-size: 3.5rem;
+    }
+    .slogan-heart {
+        margin-top: var(--spacing-small);
+    }
+
+    /* Location Mobile Styling */
+    .location {
+        margin: var(--spacing-large) var(--spacing-mid);
+        padding: 0;
+        text-align: center;
+    }
+
+    .location-title {
+        font-size: 4.3rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    iframe {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    }
+
+    .location b, .location p {
+        font-size: 1.5rem;
+    }
+
+    .location-btn {
+        font-size: 1.5rem;
+    }
+
+    /* Schedule mobile styling */
+    .slide {
+        margin: 0 var(--spacing-large);
+        display: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 2.5rem;
+        margin: 0 var(--spacing-mid);
+        padding: 0;
+    }
+
+    .slideshow-title {
+        font-size: 4.3rem;
+        font-weight: 600;
+    }
+
+    .slide-card-day {
+        font-size: 1.5rem;
+    }
+
+    .slide-card-hours {
+        font-size: 1.5rem;
+    }
+
+    .slide-card-ico {
+        width: 60px;
+        height: 60px;
+    }
+
+    .slide-card:active {
+        transform: scale(1.1);
+    }
+
+    .week {
+        font-size: 1.5rem;
+    }
+
+    .week:active {
+        transform: scale(1.1);
+    }
+
+    /*Instagram mobile Styling*/
+    .insta {
+        text-align: center;
+        width: 100%;
+        display: block;
+        padding: var(--spacing-large) 0;
+    }
+
+    .insta-title {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: var(--spacing-small);
+    }
+
+    .insta-checked-ico {
+        display: none;
+    }
+
+    .copy {
+        font-size: 0.7rem;
+    }
+
+    .copy a{ 
+        font-size: 0.7rem;
+    }
+}

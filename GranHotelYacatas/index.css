@@ -1,0 +1,1915 @@
+/* Google Fonts */
+/* Roboto Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
+/* Open Sans Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700;800&display=swap');
+/* Raleway Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700;900&display=swap');
+/* Quicksand Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+/* Lato Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+/* Montserrat Font */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap');
+
+
+
+/* Variables */
+:root {
+    /* Font Sizes */
+    --header-title-size: 7rem;
+    --body-subtitle-size: 3rem;
+    --body-title-mobile-size: 2.3rem;
+    --body-text-mobile-size: 1.2rem;
+    --body-text-size: 1rem;
+    --body-seconday-text-size: 0.6rem;
+    /* Spacing */
+    --spacing-content: 20%;
+    --spacing-large: 5rem;
+    --spacing-mid: 3rem;
+    --spacing-medium: 2rem;
+    --spacing-mobile: 1.5rem;
+    --spacing-small: 1rem;
+    --spacing-micro: 0.5rem;
+    /* Colors */
+    --black-color: #000;
+    --white-color: #fff;
+    --primary-color: #222;
+    --secondary-color: #68cb26;
+    --tertiary-color: #f1eee8;
+    --quaternary-color: #f0f0f0;
+    /* Transition */
+    --transition-default: all 0.3s ease-in-out;
+    /*Shadow*/
+    --layered-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 3px 3px hsl(0deg 0% 0% / 0.075),
+    0 5px 5px hsl(0deg 0% 0% / 0.075),
+    0 9px 9px hsl(0deg 0% 0% / 0.075),
+    0 14px 14px hsl(0deg 0% 0% / 0.075)
+    ;
+}
+
+
+/* Reset HTML*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+
+/* HTML Behavior*/
+html {
+    scroll-behavior: smooth;
+    background-color: var(--white-color);
+}
+
+
+
+/* Header Styling */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+/* Topbar Styling */
+.top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    margin: 0 var(--spacing-large);
+}
+
+.top-container-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-container-contact--ico {
+    width: 22px;
+    height: 22px;
+    margin-left: 0.3rem;
+    transition: var(--transition-default);
+}
+
+.top-container-contact--ico:hover {
+    transform: scale(1.3);
+    transition: var(--transition-default);
+}
+
+.top-container-contact p {
+    margin-top: -0.3rem;
+}
+
+.top-container-contact--text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--white-color);
+    margin: 0 var(--spacing-micro);
+}
+
+.top-container--logo {
+    margin-left: -6rem;
+    width: 180px;
+    height: 80px;
+    transition: var(--transition-default);
+}
+
+.top-container--logo:hover {
+    transform: scale(1.1);
+    transition: var(--transition-default);
+}
+
+
+
+/* Navbar Styling */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    transition: var(--transition-default);
+    margin-top: var(--spacing-micro);
+}
+/* Fade Dynamic Class */
+.fade {
+    opacity: 0;
+    transform: translateY(-80%);
+    transition: var(--transition-default);
+}
+
+.nav-container--link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white-color);
+    margin: 0 var(--spacing-micro);
+    transition: var(--transition-default);
+}
+
+.nav-container--link:hover {
+    color: var(--secondary-color);
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--secondary-color);
+    transition: var(--transition-default);
+}
+/* Hamburguer Menu */
+.nav-menu {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-menu-burger {
+    width: 44px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all 0.5s ease-in-out
+}
+
+.nav-menu-burger::before, .nav-menu-burger::after {
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 6px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-menu-burger::before {
+    transform: translateY(-16px);
+}
+
+.nav-menu-burger::after {
+    transform: translateY(16px);
+}
+
+.nav-menu.open .nav-menu-burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.nav-menu.open .nav-menu-burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+    
+.nav-menu.open .nav-menu-burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* Sidebar Section Styling*/
+.sidebar {
+    display: none;
+}
+/* Fade Dynamic Class */
+.sageOff {
+    opacity: 0;
+    transform: translateX(-80%);
+    transition: var(--transition-default);
+}
+
+.sageOn {
+    opacity: 100;
+    transform: translateX(0);
+    transition: var(--transition-default);
+}
+
+
+
+/* Content Styling* /
+/*Hero Banner Section Styling*/
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("src/images/Hero-1.jpg"); 
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    transition: var(--transition-default);
+    box-shadow: var(--layered-shadow);
+}
+
+.banner-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: var(--primary-color);
+}
+
+.banner-header--title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--header-title-size);
+    font-weight: 400;
+    color: var(--white-color);
+    margin-top: var(--spacing-small);
+    margin-bottom: 0.3rem;
+}
+
+.banner-header--title-h {
+    color: var(--white-color);
+}
+
+.banner-header--text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--white-color);
+    margin-bottom: 1.8rem;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-container-card {
+    margin: 0 var(--spacing-small);
+    transition: var(--transition-default);
+}
+
+.banner-container-card:hover {
+    transform: scale(1.13);
+    transition: var(--transition-default);
+}
+
+.banner-container-card--ico {
+    text-align: center;
+}
+
+.banner-container-card--text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--white-color);
+    margin-bottom: var(--spacing-small);
+}
+
+
+
+/* About Section Styling */
+.about {
+    margin: var(--spacing-mid) 0;
+}
+
+.about-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-decor {
+    width: 44px;
+    height: 44px;
+}
+
+.about-header--title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-subtitle-size);
+    font-weight: 400;
+    color: var(--black-color);
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: var(--spacing-mid) var(--spacing-content);
+    box-shadow: var(--layered-shadow);
+}
+
+.about-container-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.about-mobile {
+    display: none;
+}
+
+.about-container--img {
+    width: 100%;
+    height: 35vh;
+    transition: var(--transition-default);
+}
+
+.about-container--img:hover {
+    transition: var(--transition-default);
+    transform: scale(1.03);
+}
+
+.about-container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary-color);
+}
+
+.about-container-content--title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-text-size);
+    font-weight: 600;
+    color: var(--black-color);
+    padding: var(--spacing-micro) var(--spacing-mid);
+    text-align: center;
+}
+
+.about-container-content--text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-text-size);
+    font-weight: 400;
+    line-height: 1.3;
+    color: var(--black-color);
+    padding: var(--spacing-micro) var(--spacing-mid);
+    text-align: center;
+}
+
+
+
+/* Services Section Styling */
+.services {
+    background-color: var(--primary-color);
+    padding: var(--spacing-mid) var(--spacing-content);
+    box-shadow: var(--layered-shadow);
+}
+
+.services-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-header--title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-subtitle-size);
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+.services-header--slogan {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-text-size);
+    font-weight: 400;
+    color: var(--white-color);
+    margin-top: var(--spacing-small);
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    row-gap: var(--spacing-mid);
+    margin: var(--spacing-mid) 0;
+}
+
+.services-container--ico {
+    border-radius: 50%;
+    padding: var(--spacing-small);
+    box-shadow: var(--layered-shadow);
+    transition: var(--transition-default);
+}
+
+.services-container--ico:hover {
+    background-color: var(--secondary-color);
+    transition: var(--transition-default);
+    transform: scale(1.13);
+}
+
+.services-container--text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--white-color);
+    margin-top: var(--spacing-micro);
+    padding: var(--spacing-micro) var(--spacing-mid);
+}
+
+
+
+/* Tourism Section Styling */
+.tourism {
+    margin: var(--spacing-mid) var(--spacing-content);
+}
+
+.tourism-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-decor {
+    width: 44px;
+    height: 44px;
+}
+
+.tourism-header--title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-subtitle-size);
+    font-weight: 400;
+    color: var(--black-color);
+}
+
+.tourism-container-card {
+    margin: var(--spacing-mid) 0;
+    margin-top: var(--spacing-mid);
+    padding: 0 var(--spacing-mid);
+    box-shadow: var(--layered-shadow);
+    background-color: var(--tertiary-color);
+}
+
+.tourism-container-card--img {
+    width: 100%;
+    height: 70vh;
+    margin-bottom: var(--spacing-small);
+    transition: var(--transition-default);
+    box-shadow: var(--layered-shadow);
+}
+
+.tourism-container-card--img:hover {
+    transform: scale(1.03);
+    transition: var(--transition-default);
+}
+
+.tourism-container-card--title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--black-color);
+    padding: var(--spacing-mid) 0;
+}
+
+.tourism-container-card--text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-text-size);
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.3;
+    color: var(--black-color);
+    padding-bottom: var(--spacing-medium);
+}
+
+
+
+/* Rooms & Suits */
+.rooms {
+    background-color: var(--primary-color);
+    padding: var(--spacing-mid) var(--spacing-content);
+    box-shadow: var(--layered-shadow);
+}
+
+.rooms-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rooms-header--title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-subtitle-size);
+    font-weight: 400;
+    color: var(--white-color);
+}
+/* SlideShow */
+.rooms-container {
+    text-align: center;
+}
+
+.rooms-types {
+    text-align: center;
+    margin-bottom: var(--spacing-small);
+}
+  
+.room {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--black-color);
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    padding: 0.5rem var(--spacing-small);
+    margin: var(--spacing-small) var(--spacing-micro);
+    transition: var(--transition-default);
+    box-shadow: var(--layered-shadow);
+}
+
+.room:active {
+    transform: scale(1.1);
+    transition: var(--transition-default);
+}
+
+.room:hover {
+    transform: scale(1.1);
+    transition: var(--transition-default);
+}
+
+.active, .room:hover {
+    background-color: var(--secondary-color);
+    transition: var(--transition-default);
+}
+
+.rooms-slide {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation-fill-mode: forwards;
+}
+
+.wave {
+    animation-name: wave;
+    animation-duration: 1.5s;
+}
+  
+@keyframes wave {
+    from {opacity: 0; margin-left:-120vw;}
+    to {opacity: 1; margin-left: 0;}
+}
+
+.rooms-slide-card {
+    background-color: var(--white-color);
+    color: var(--main-color);
+    width: 300px;
+    height: 417px;
+    margin: 0 var(--spacing-small);
+    box-shadow: var(--layered-shadow);
+    transition: var(--transition-default);
+}
+
+.rooms-slide-card:active {
+    transition: var(--transition-default);
+    transform: scale(1.07);
+}
+
+.rooms-slide-card:hover {
+    transition: var(--transition-default);
+    transform: scale(1.07);
+}
+
+.rooms-slide-card--img {
+    width: 100%;
+    height: 200px;
+    box-shadow: var(--layered-shadow);
+}
+
+.rooms-slide-card--title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-text-size);
+    font-weight: 600;
+    color: var(--black-color);
+    margin-top: var(--spacing-small);
+}
+
+.rooms-slide-card--text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--black-color);
+    margin: var(--spacing-micro) 0.7rem;
+    padding: 0 var(--spacing-mobile);
+    margin-bottom: 1.5rem;
+}
+
+.rooms-slide-card--price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-text-size);
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    color: var(--black-color);
+    padding: var(--spacing-micro) var(--spacing-small);
+    transition: var(--transition-default);
+}
+
+.rooms-slide-card--price:hover {
+    transition: var(--transition-default);
+    color: var(--tertiary-color);
+}
+    
+.line {
+    border-bottom: 1px solid rgb(128, 128, 128, 0.7);
+    margin: var(--spacing-micro) var(--spacing-mid);
+    margin-top: 1.7rem;
+}
+
+.rooms-slide-card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rooms-slide-card-info-cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: var(--spacing-micro);
+    transition: var(--transition-default);
+}
+
+.rooms-slide-card-info-cnt:hover {
+    transition: var(--transition-default);
+    transform: scale(1.18);
+}
+
+.rooms-slide-card-info--ico {
+    height: 16px;
+    width: 16px;
+}
+
+.rooms-slide-card-info--text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0 0.2rem;
+    color: var(--black-color);
+    cursor: default;
+}
+
+
+
+/* Gallery Section Styling */
+.gallery {
+    margin: var(--spacing-mid) var(--spacing-content);
+}
+
+.gallery-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-decor {
+    width: 44px;
+    height: 44px;
+}
+
+.gallery-header--title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-subtitle-size);
+    font-weight: 400;
+    color: var(--black-color);
+    margin-bottom: var(--spacing-mid);
+}
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    height: 72vh;
+    background-color: var(--primary-color);
+    background-image: url("src/images/rooms/HabitacionDoble.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    transition: var(--transition-default);
+    animation: banner 25s infinite linear;
+    -webkit-transition: var(--transition-default);
+    -webkit-animation: banner 25s infinite linear;
+    box-shadow: var(--layered-shadow);
+}
+
+@keyframes banner {
+    0% {
+        background-image: url("src/images/rooms/HabitacionDoble.jpg");
+    }
+    20% {
+        background-image: url("src/images/rooms/HabitacionDoble.jpg");
+    }
+    21% {
+        background-image: url("src/images/rooms/BañoDoble.jpg"); 
+    }
+    40% {
+        background-image: url("src/images/rooms/BañoDoble.jpg"); 
+    }
+    41% {
+        background-image: url("src/images/rooms/HotelAfuera.jpg"); 
+    }
+    60% {
+        background-image: url("src/images/rooms/HotelAfuera.jpg"); 
+    }
+    61% {
+        background-image: url("src/images/rooms/HabitacionIndividual.jpg"); 
+    }
+    80% {
+        background-image: url("src/images/rooms/HabitacionIndividual.jpg"); 
+    }
+    81% {
+        background-image: url("src/images/rooms/BañoIndividual.jpg"); 
+    }
+    100% {
+        background-image: url("src/images/rooms/BañoIndividual.jpg"); 
+    }
+}
+
+
+
+/* Find Us Section Styling */
+.findus {
+    background-color: var(--primary-color);
+    padding: var(--spacing-mid) var(--spacing-content);
+    box-shadow: var(--layered-shadow);
+    height: 103vh;
+}
+
+.findus-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-decor {
+    width: 44px;
+    height: 44px;
+}
+
+.findus-header--title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-subtitle-size);
+    font-weight: 400;
+    color: var(--white-color);
+    margin-bottom: var(--spacing-mid);
+}
+
+.findus-container {
+    width: 100%;
+    height: 600px; 
+    box-shadow: var(--layered-shadow);
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.find-us-container--text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-text-size);
+    font-weight: 400;
+    color: var(--white-color);
+    margin-bottom: var(--spacing-mid);
+}
+
+.find-us-container--btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-text-size);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black-color);
+    padding: var(--spacing-small) var(--spacing-small);
+    margin-bottom: var(--spacing-mid);
+    background-color: var(--white-color);
+    font-weight: 400;
+    box-shadow: var(--layered-shadow);
+    transition: var(--transition-default);
+}
+
+.find-us-container--btn:hover {
+    transition: var(--transition-default);
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+
+
+/* Booking Section Styling */
+.booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-mid) var(--spacing-content);
+    height: 50vh;
+    background-image: url("src/images/Booking.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.booking-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-decor {
+    width: 44px;
+    height: 44px;
+}
+
+.booking-header--title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-subtitle-size);
+    font-weight: 400;
+    color: var(--white-color);
+    margin-bottom: var(--spacing-mid);
+}
+
+.booking-header--text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-text-size);
+    font-weight: 400;
+    color: var(--white-color);
+    margin-bottom: var(--spacing-mid);
+}
+
+.booking-header--btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body-text-size);
+    font-weight: 500;
+    padding: var(--spacing-small) var(--spacing-large);
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    transition: var(--transition-default);
+    box-shadow: var(--layered-shadow);
+}
+
+.booking-header--btn:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transition: var(--transition-default);
+}
+
+
+
+/* Footer Styling */
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: var(--spacing-small);
+}
+
+.footer-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--white-color);
+    margin-bottom: 0.2rem;
+}
+
+.footer-sub-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--body-seconday-text-size);
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.footer-sub-text a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--body-seconday-text-size);
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Responsive Adaptability*/
+@media screen and (max-width: 500px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Header Mobile Styling */
+    /* Top Container Styling */
+    .top-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+        margin: var(--spacing-small) var(--spacing-mobile);
+    }
+
+    .top-container-contact {
+        display: none;
+    }
+
+    .top-container-socials {
+        display: none;
+    }
+
+    .top-container--logo {
+        margin-left: -1rem;
+        width: 180px;
+        height: 80px;
+        transition: var(--transition-default);
+    }
+
+    .top-container--logo {
+        height: 70px;
+        width: 150px;
+    }
+
+
+
+    /* Navbar Responsive Styling*/
+    .nav {
+        padding: var(--spacing-micro) var(--spacing-small);
+    }
+    .nav-menu-burger {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: flex;
+    }
+
+    .nav-container {
+        width: 100%;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+        background-color: rgb(34, 34, 34, 0.85);
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+        z-index: 111;
+        margin-top: 20rem;
+        padding: var(--spacing-small) 0;
+        transition: all 0.5s ease-in-out;
+        transform:translateX(501px);
+    }
+
+    .nav-container.on{
+        transform:translateX(0);
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .nav-container--link {
+        font-size: var(--body-text-size);
+        padding: var(--spacing-small);
+    }
+
+    .nav-container--link:after {
+        bottom: 3px;
+    }
+
+    /* Sidebar Section Styling*/
+    .sidebar {
+        opacity: 0;
+        display: flex;
+        position: fixed;
+        top: 40%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1px;
+    }
+
+    .sidebar--ico {
+        height: 28px;
+        width: 28px;
+        margin-bottom: var(--spacing-micro);
+    }
+
+    /* Fade Dynamic Class */
+    .sageOff {
+        opacity: 0;
+        transform: translateX(-80%);
+        transition: var(--transition-default);
+    }
+
+    .sageOn {
+        opacity: 100;
+        transform: translateX(0);
+        transition: var(--transition-default);
+    }
+
+
+
+    /* Content Mobile Styling* /
+    /* Banner Responsive Styling */
+    .banner {
+        background-image: url("src/images/Hero-Mobile.jpeg");
+    }
+
+    .banner-header--title {
+        text-align: center;
+        font-size: 3.99rem;
+        margin: 0 var(--spacing-mobile);
+    }
+
+    .banner-header--text {
+        text-align: center;
+        font-size: var(--body-text-mobile-size);
+        margin: var(--spacing-small) var(--spacing-mobile);
+    }
+
+    .banner-container-card--ico {
+        width: 66px;
+        height: 66px;
+        margin-top: var(--spacing-micro);
+    }
+
+
+
+    /* About Responsive Styling */
+    .about {
+        margin: var(--spacing-medium) 0;
+    }
+    
+    .header-decor {
+        width: 33px;
+        height: 33px;
+    }
+    
+    .about-header--title {
+        font-size: var(--body-title-mobile-size);
+    }
+
+    .about-container {
+        margin: var(--spacing-medium) var(--spacing-medium);
+    }
+    
+    .about-container-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .about-container--img {
+        width: 100%;
+        height: 250px;
+        transition: var(--transition-default);
+    }
+
+    .about-mobile {
+        display: grid;
+    }
+
+    .about-desk {
+        display: none;
+    }
+
+
+
+    /* Services Responsive Styling*/
+    .services {
+        padding: var(--spacing-medium) 0;
+    }
+    
+    .services-header--title {
+        font-size: var(--body-title-mobile-size);
+    }
+    
+    .services-header--slogan {
+        text-align: center;
+        padding: 0 var(--spacing-medium);
+    }
+    
+    .services-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        text-align: center;
+        row-gap: 0.5rem;
+        margin: var(--spacing-medium) 0;
+        margin-bottom: var(--spacing-small);
+    }
+
+    .services-container--ico {
+        height: 55px;
+        width: 55px;
+        padding: var(--spacing-small);
+    }
+
+    .services-container--text {
+        margin-top: 0.3rem;
+    }
+
+
+
+    /* Tourism Responsive Styling */
+    .tourism {
+        margin: var(--spacing-medium) 0;
+    }
+    
+    .tourism-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header-decor {
+        width: 44px;
+        height: 44px;
+    }
+    
+    .tourism-header--title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: var(--body-subtitle-size);
+        font-weight: 400;
+        color: var(--black-color);
+    }
+
+    .tourism-container-card {
+        margin: 0 var(--spacing-medium);
+        padding: 0;
+        margin-top: var(--spacing-small);
+        margin-bottom: var(--spacing-mid);
+    }
+    
+    .tourism-container-card--img {
+        width: 100%;
+        height: 240px;
+        margin-bottom: var(--spacing-small);
+    }
+    
+    .tourism-container-card--title {
+        font-size: 1.5rem;
+        padding: var(--spacing-medium) var(--spacing-mobile);
+    }
+
+    .tourism-container-card--text {
+        text-align: justify;
+        padding: 0 var(--spacing-mobile);
+        padding-bottom: var(--spacing-small);
+    }
+
+
+
+    /* Rooms & Suites Mobile Styling */
+    .rooms {
+        background-color: var(--primary-color);
+        padding: var(--spacing-medium) 0;
+        padding-bottom: 0;
+        box-shadow: var(--layered-shadow);
+    }
+    
+    .rooms-header--title {
+        font-size: var(--body-title-mobile-size);
+    }
+
+    .rooms-slide {
+        flex-direction: column;
+    }
+      
+    .room {
+        margin: var(--spacing-mobile) var(--spacing-micro);
+    }
+
+    .rooms-slide-card {
+        background-color: var(--white-color);
+        color: var(--main-color);
+        width: 325px;
+        height: 417px;
+        margin: 0 var(--spacing-small);
+        margin-bottom: var(--spacing-mid);
+        box-shadow: var(--layered-shadow);
+        transition: var(--transition-default);
+    }
+
+
+
+    /* Gallery Mobile Styling */
+    .gallery {
+        margin: var(--spacing-medium) 0;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .gallery-header--title {
+        font-size: var(--body-title-mobile-size);
+        margin-bottom: var(--spacing-medium);
+    }
+
+    .gallery-container {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        background-color: var(--primary-color);
+        background-image: url("src/images/rooms/mobile/CuartoDobleMobile.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        transition: var(--transition-default);
+        animation: banner 25s infinite linear;
+        -webkit-transition: var(--transition-default);
+        -webkit-animation: banner 25s infinite linear;
+        box-shadow: var(--layered-shadow);
+        margin-bottom: var(--spacing-large);
+    }
+
+    @keyframes banner {
+        0% {
+            background-image: url("src/images/rooms/mobile/CuartoDobleMobile.jpeg");
+        }
+        20% {
+            background-image: url("src/images/rooms/mobile/CuartoDobleMobile.jpeg");
+        }
+        21% {
+            background-image: url("src/images/rooms/mobile/BañoDobleMobile.jpeg"); 
+        }
+        40% {
+            background-image: url("src/images/rooms/mobile/BañoDobleMobile.jpeg"); 
+        }
+        41% {
+            background-image: url("src/images/rooms/mobile/HotelMobile.jpeg"); 
+        }
+        60% {
+            background-image: url("src/images/rooms/mobile/HotelMobile.jpeg"); 
+        }
+        61% {
+            background-image: url("src/images/rooms/mobile/CuartoIndividualMobile.jpeg"); 
+        }
+        80% {
+            background-image: url("src/images/rooms/mobile/CuartoIndividualMobile.jpeg"); 
+        }
+        81% {
+            background-image: url("src/images/rooms/mobile/BañoIndividualMobile.jpeg"); 
+        }
+        100% {
+            background-image: url("src/images/rooms/mobile/BañoIndividualMobile.jpeg"); 
+        }
+    }
+
+    @-webkit-keyframes banner {
+        0% {
+            background-image: url("src/images/rooms/mobile/CuartoDobleMobile.jpeg");
+        }
+        20% {
+            background-image: url("src/images/rooms/mobile/CuartoDobleMobile.jpeg");
+        }
+        21% {
+            background-image: url("src/images/rooms/mobile/BañoDobleMobile.jpeg"); 
+        }
+        40% {
+            background-image: url("src/images/rooms/mobile/BañoDobleMobile.jpeg"); 
+        }
+        41% {
+            background-image: url("src/images/rooms/mobile/HotelMobile.jpeg"); 
+        }
+        60% {
+            background-image: url("src/images/rooms/mobile/HotelMobile.jpeg"); 
+        }
+        61% {
+            background-image: url("src/images/rooms/mobile/CuartoIndividualMobile.jpeg"); 
+        }
+        80% {
+            background-image: url("src/images/rooms/mobile/CuartoIndividualMobile.jpeg"); 
+        }
+        81% {
+            background-image: url("src/images/rooms/mobile/BañoIndividualMobile.jpeg"); 
+        }
+        100% {
+            background-image: url("src/images/rooms/mobile/BañoIndividualMobile.jpeg"); 
+        }
+    }
+
+
+
+
+    /* Find Us Mobile Styling */
+    .findus {
+        padding: var(--spacing-medium) 0;
+    }
+    
+    .header-decor {
+        width: 44px;
+        height: 44px;
+    }
+    
+    .findus-header--title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: var(--body-title-mobile-size);
+        font-weight: 400;
+        color: var(--white-color);
+        margin-bottom: var(--spacing-micro);
+    }
+
+    .findus-container {
+        margin: var(--spacing-medium) 0;
+        margin-bottom: var(--spacing-small);
+    }
+    
+    .find-us-container--text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: var(--body-text-size);
+        font-weight: 400;
+        color: var(--white-color);
+        margin: var(--spacing-medium) var(--spacing-medium);
+        margin-top: var(--spacing-small);
+    }
+    
+    .find-us-container--btn {
+        padding: var(--spacing-micro) var(--spacing-medium);
+        margin: 0 var(--spacing-mid);
+    }
+
+
+
+    /* Booking Mobile Styling */
+    .booking {
+        padding: var(--spacing-medium) 0;
+        height: 90vh;
+    }
+
+    .booking-header--title {
+        font-size: var(--body-title-mobile-size);
+        margin-bottom: var(--spacing-small);
+        text-align: center;
+    }
+    
+    .booking-header--text {
+        text-align: center;
+        margin: 0 var(--spacing-medium);
+        margin-bottom: var(--spacing-medium);
+    }
+    
+    .booking-header--btn {
+        padding: var(--spacing-small) var(--spacing-large);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet Responsive Adaptability*/
+@media screen and (min-width:501px) and (max-width:850px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Header Tablet Styling */
+    /* Top Container Styling */
+    .top-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+        margin: var(--spacing-medium) var(--spacing-mid);
+    }
+    .top-container-contact {
+        display: none;
+    }
+
+    .top-container-socials {
+        display: none;
+    }
+
+    .top-container--logo {
+        margin-left: -1rem;
+        height: 90px;
+        width: 220px;
+    }
+
+
+
+    /* Navbar Responsive Styling*/
+    .nav {
+        padding: var(--spacing-micro) var(--spacing-small);
+    }
+    .nav-menu-burger {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: flex;
+    }
+
+    .nav-container {
+        width: 100%;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+        background-color: rgb(34, 34, 34, 0.85);
+        backdrop-filter: blur(10px);
+        z-index: 111;
+        margin-top: 43rem;
+        padding: var(--spacing-large) 0;
+        transition: all 0.5s ease-in-out;
+        transform:translateX(850px);
+    }
+
+    .nav-container.on{
+        transform:translateX(0);
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .nav-container--link {
+        font-size: 1.5rem;
+        padding: var(--spacing-medium);
+    }
+
+    .nav-container--link:after {
+        bottom: 3px;
+    }
+
+
+
+    /* Content Tablet Styling* /
+    /* Banner Responsive Styling */
+    .banner {
+        background-image: url("src/images/Hero-Mobile.jpeg"); 
+    }
+
+    .banner-header--title {
+        text-align: center;
+        font-size: 5rem;
+        margin: 0 var(--spacing-mobile);
+    }
+
+    .banner-header--text {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: var(--spacing-small) var(--spacing-mobile);
+    }
+
+    .banner-container-card--ico {
+        width: 88px;
+        height: 88px;
+        margin-top: var(--spacing-micro);
+    }
+
+    .banner-container-card--text {
+        margin-top: var(--spacing-micro);
+        font-size: var(--body-text-size);
+    }
+
+
+
+    /* About Responsive Styling */
+    .about {
+        margin: var(--spacing-mid) 0;
+    }
+    
+    .header-decor {
+        width: 44px;
+        height: 44px;
+    }
+    
+    .about-header--title {
+        font-size: var(--body-subtitle-size);
+    }
+
+    .about-container {
+        margin: var(--spacing-mid) var(--spacing-mid);
+    }
+
+    .about-container-content--title{
+        font-size: 1.4rem;
+        margin-top: var(--spacing-small);
+        padding: var(--spacing-small) 0;
+    }
+
+    .about-container-content--text {
+        font-size: 1.1rem;
+        margin-bottom: var(--spacing-small);
+    }
+    
+    .about-container-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .about-container--img {
+        width: 100%;
+        height: 300px;
+        transition: var(--transition-default);
+    }
+
+    .about-mobile {
+        display: none;
+    }
+
+    .about-desk {
+        display: grid;
+    }
+
+
+
+    /* Services Responsive Styling*/
+    .services {
+        padding: var(--spacing-mid) 0;
+    }
+    
+    .services-header--title {
+        font-size: var(--body-subtitle-size);
+    }
+    
+    .services-header--slogan {
+        font-size: var(--body-text-mobile-size);
+        text-align: center;
+        padding: var(--spacing-small) var(--spacing-mid);
+    }
+    
+    .services-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        text-align: center;
+        row-gap: 0.5rem;
+        margin: var(--spacing-mid) 0;
+        margin-bottom: var(--spacing-medium);
+    }
+
+    .services-container--ico {
+        padding: var(--spacing-small);
+    }
+
+    .services-container--text {
+        font-size: var(--body-text-mobile-size);
+        margin-top: 0.3rem;
+    }
+
+
+
+    /* Tourism Responsive Styling */
+    .tourism {
+        margin: var(--spacing-mid) 0;
+    }
+    
+    .tourism-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .tourism-header--title {
+        font-size: var(--body-subtitle-size);
+        font-weight: 400;
+        color: var(--black-color);
+    }
+
+    .tourism-container-card {
+        margin: 0 var(--spacing-mid);
+        padding: 0 var(--spacing-medium);
+        margin-top: var(--spacing-mid);
+        margin-bottom: var(--spacing-mid);
+    }
+    
+    .tourism-container-card--img {
+        width: 100%;
+        height: 450px;
+        margin-bottom: var(--spacing-small);
+    }
+    
+    .tourism-container-card--title {
+        font-size: 2rem;
+        padding: var(--spacing-medium) 0;
+    }
+
+    .tourism-container-card--text {
+        font-size: var(--body-text-mobile-size);
+        text-align: center;
+        padding-bottom: var(--spacing-small);
+    }
+
+
+
+    /* Rooms & Suites Mobile Styling */
+    .rooms {
+        background-color: var(--primary-color);
+        padding: var(--spacing-mid) 0;
+        padding-bottom: 0;
+    }
+    
+    .rooms-header--title {
+        font-size: var(--body-subtitle-size);
+    }
+
+    .rooms-slide {
+        flex-direction: column;
+    }
+      
+    .room {
+        font-size: var(--body-text-mobile-size);
+        border: 1.5rem;
+        margin: var(--spacing-medium) var(--spacing-small);
+    }
+
+    .rooms-slide-card {
+        background-color: var(--white-color);
+        color: var(--main-color);
+        width: 380px;
+        height: 500px;
+        margin: 0 var(--spacing-small);
+        margin-bottom: var(--spacing-mid);
+        box-shadow: var(--layered-shadow);
+        transition: var(--transition-default);
+    }
+
+    .rooms-slide-card--img {
+        height: 250px;
+    }
+
+    .rooms-slide-card--title {
+        font-size: var(--body-text-mobile-size);
+    }
+
+    .rooms-slide-card--price {
+        font-size: var(--body-text-mobile-size);
+    }
+
+    .rooms-slide-card--text {
+        font-size: var(--body-text-mobile-size);
+    }
+
+    .rooms-slide-card-info--text {
+        font-size: 1rem;
+    }
+
+
+
+    /* Gallery Mobile Styling */
+    .gallery {
+        margin: var(--spacing-mid) 0;
+    }
+    
+    .gallery-header--title {
+        font-size: var(--body-subtitle-size);
+        margin-bottom: var(--spacing-mid);
+    }
+
+    .gallery-container {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        background-color: var(--primary-color);
+        background-image: url("src/images/rooms/mobile/CuartoDobleMobile.jpeg");
+        background-size: cover;
+        background-position: center;
+        transition: var(--transition-default);
+        animation: banner 25s infinite linear;
+        -webkit-transition: var(--transition-default);
+        -webkit-animation: banner 25s infinite linear;
+        box-shadow: var(--layered-shadow);
+        margin-bottom: var(--spacing-large);
+    }
+
+    @keyframes banner {
+        0% {
+            background-image: url("src/images/rooms/mobile/CuartoDobleMobile.jpeg");
+        }
+        20% {
+            background-image: url("src/images/rooms/mobile/CuartoDobleMobile.jpeg");
+        }
+        21% {
+            background-image: url("src/images/rooms/mobile/BañoDobleMobile.jpeg"); 
+        }
+        40% {
+            background-image: url("src/images/rooms/mobile/BañoDobleMobile.jpeg"); 
+        }
+        41% {
+            background-image: url("src/images/rooms/mobile/HotelMobile.jpeg"); 
+        }
+        60% {
+            background-image: url("src/images/rooms/mobile/HotelMobile.jpeg"); 
+        }
+        61% {
+            background-image: url("src/images/rooms/mobile/CuartoIndividualMobile.jpeg"); 
+        }
+        80% {
+            background-image: url("src/images/rooms/mobile/CuartoIndividualMobile.jpeg"); 
+        }
+        81% {
+            background-image: url("src/images/rooms/mobile/BañoIndividualMobile.jpeg"); 
+        }
+        100% {
+            background-image: url("src/images/rooms/mobile/BañoIndividualMobile.jpeg"); 
+        }
+    }
+
+    @-webkit-keyframes banner {
+        0% {
+            background-image: url("src/images/rooms/mobile/CuartoDobleMobile.jpeg");
+        }
+        20% {
+            background-image: url("src/images/rooms/mobile/CuartoDobleMobile.jpeg");
+        }
+        21% {
+            background-image: url("src/images/rooms/mobile/BañoDobleMobile.jpeg"); 
+        }
+        40% {
+            background-image: url("src/images/rooms/mobile/BañoDobleMobile.jpeg"); 
+        }
+        41% {
+            background-image: url("src/images/rooms/mobile/HotelMobile.jpeg"); 
+        }
+        60% {
+            background-image: url("src/images/rooms/mobile/HotelMobile.jpeg"); 
+        }
+        61% {
+            background-image: url("src/images/rooms/mobile/CuartoIndividualMobile.jpeg"); 
+        }
+        80% {
+            background-image: url("src/images/rooms/mobile/CuartoIndividualMobile.jpeg"); 
+        }
+        81% {
+            background-image: url("src/images/rooms/mobile/BañoIndividualMobile.jpeg"); 
+        }
+        100% {
+            background-image: url("src/images/rooms/mobile/BañoIndividualMobile.jpeg"); 
+        }
+    }
+
+
+
+    /* Find Us Mobile Styling */
+    .findus {
+        padding: var(--spacing-mid) 0;
+        height: 80vh;
+    }
+    
+    .findus-header--title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: var(--body-subtitle-size);
+        font-weight: 400;
+        color: var(--white-color);
+        margin-bottom: var(--spacing-micro);
+    }
+
+    .findus-container {
+        margin: var(--spacing-mid) 0;
+        margin-bottom: var(--spacing-medium);
+    }
+    
+    .find-us-container--text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: var(--body-text-mobile-size);
+        font-weight: 400;
+        color: var(--white-color);
+        margin: var(--spacing-medium) var(--spacing-medium);
+        margin-top: var(--spacing-small);
+    }
+    
+    .find-us-container--btn {
+        font-size: var(--body-text-mobile-size);
+        padding: var(--spacing-micro) var(--spacing-medium);
+        margin: 0 var(--spacing-mid);
+    }
+
+
+
+    /* Booking Mobile Styling */
+    .booking {
+        padding: var(--spacing-mid) 0;
+        height: 90vh;
+    }
+
+    .booking-header--title {
+        font-size: var(--body-subtitle-size);
+        margin-bottom: var(--spacing-medium);
+        text-align: center;
+    }
+    
+    .booking-header--text {
+        font-size: var(--body-text-mobile-size);
+        text-align: center;
+        margin: 0 var(--spacing-mid);
+        margin-bottom: var(--spacing-mid);
+    }
+    
+    .booking-header--btn {
+        font-size: var(--body-text-mobile-size);
+        padding: var(--spacing-medium) var(--spacing-large);
+    }
+
+}
+
+
+
