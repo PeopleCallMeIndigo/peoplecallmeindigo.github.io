@@ -844,6 +844,7 @@ footer {
         padding: 1rem 0;
     }
     .banner--text-2 {
+        display: none;
         width: 60%;
         font-family: var(--family);
         color: var(--white);
