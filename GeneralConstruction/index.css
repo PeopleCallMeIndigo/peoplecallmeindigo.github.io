@@ -803,7 +803,7 @@ footer {
     .banner-content {
         margin: 0;
         padding: 0 5%;
-        padding-top: 3%;
+        padding-top: -3rem;
         width: 100%;
         height: 100%;
         color:var(--primary-color);
