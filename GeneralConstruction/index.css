@@ -128,7 +128,7 @@ html {
     background-position: center;
     transition: all .6s ease-in-out;
     animation: banner 22s infinite linear;
-    background-image: url("../images/Hero-1.jpg");
+    background-image: url("src/images/Hero-1.jpg");
 }
 
 .banner-cover {
@@ -790,7 +790,7 @@ footer {
         background-position: center;
         transition: all .6s ease-in-out;
         animation: banner 22s infinite linear;
-        background-image: url("../images/Hero-1.jpg");
+        background-image: url("src/images/Hero-1.jpg");
     }
     
     .banner-cover {
@@ -889,7 +889,7 @@ footer {
             background-image: url("src/images/Hero-4.jpg"); 
         }
         50% {
-            background-image: url("src/images/Hero-Mobile-2.jpg"); 
+            background-image: url("src/images/Hero-Mobile-2.jpgw"); 
         }
         75% {
             background-image: url("src/images/Hero-Mobile-2.jpg"); 
