@@ -286,7 +286,7 @@ html {
     width: 44px;
     height: 6px;
     justify-content: center;
-    background-color: var(--title-color);
+    background-color: var(--indigo);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
     transition: all 0.5s ease-in-out
@@ -297,7 +297,7 @@ html {
     position: absolute;
     width: 44px;
     height: 6px;
-    background-color: var(--title-color);
+    background-color: var(--indigo);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
     transition: all 0.5s ease-in-out;
@@ -450,7 +450,7 @@ strong {
 
 .hero-container-contact--btn:hover {
     transition: var(--transitions-default);
-    background-color: var(--title-color);
+    background-color: var(--indigo);
 }
 
 .hero-container-contact--icon {
@@ -1092,13 +1092,13 @@ footer {
 
     .hero-container-contact--btn {
         font-size: 1rem;
-        background-color: var(--title-color);
+        background-color: var(--secondary-color);
         padding: var(--spacing-small) var(--spacing-normal);
     }
 
     .hero-container-contact--btn:hover {
         transition: var(--transitions-default);
-        background-color: var(--secondary-color);
+        background-color: var(--indigo);
     }
 
     .hero-cover {
