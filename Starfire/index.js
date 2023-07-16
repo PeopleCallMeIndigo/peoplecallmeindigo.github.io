@@ -58,6 +58,14 @@ gender = document.querySelector(".gender");
 share = document.querySelector(".share");
 format = document.querySelector(".format");
 size = document.querySelector(".size");
+dob = document.querySelector(".dob");
+loc = document.querySelector(".loc");
+contac = document.querySelector(".contac");
+info = document.querySelector(".info");
+pais = document.querySelector(".pais");
+city = document.querySelector(".city");
+adress = document.querySelector(".adress");
+state = document.querySelector(".state");
 
 link.forEach(el=>{
   el.addEventListener("click",()=> {
@@ -106,6 +114,14 @@ link.forEach(el=>{
     share.textContent = data[attr].share
     format.textContent = data[attr].format
     size.textContent = data[attr].size
+    dob.textContent = data[attr].dob
+    loc.textContent = data[attr].loc
+    contac.textContent = data[attr].contac
+    info.textContent = data[attr].info
+    pais.textContent = data[attr].pais
+    state.textContent = data[attr].state
+    adress.textContent = data[attr].adress
+    city.textContent = data[attr].city
   })
 })
 
@@ -140,7 +156,14 @@ let data = {
     share: "Do you want to share something?",
     format: "*Allowed formats .pdf .png .jpeg .jpg",
     size: "*Maximum size: 5MB in total.",
-    info: "Info/Comments/Questions:"
+    info: "Info/Comments/Questions:",
+    dob: "Date of Birth:",
+    loc: "Location",
+    contac: "Contact Info",
+    pais: "Country Code:",
+    city: "City:",
+    adress: "Adress:",
+    state: "State:"
   },
   spanish: {
     title: "EL SNOWBOARD ELÉCTRICO MÁS INCREÍBLE",
@@ -172,7 +195,14 @@ let data = {
     share: "Quieres compartirnos algo?",
     format: "*Formatos permitidos .pdf .png .jpeg .jpg",
     size: "*Tamaño máximo: 5MB en total.",
-    info: "Comentarios/Preguntas:"
+    info: "Comentarios/Preguntas:",
+    dob: "Fecha de nacimiento:",
+    loc: "Localización",
+    contac: "Información de Contacto",
+    pais: "Código de País:",
+    city: "Ciudad:",
+    adress: "Domicilio:",
+    state: "Estado:"
   },
   german: {
     title: "DAS UNGLAUBLICHSTE ELEKTRISCHE SNOWBOARD",
@@ -204,6 +234,13 @@ let data = {
     share: "Möchten Sie etwas teilen?",
     format: "*Zulässige Formate .pdf .png .jpeg .jpg",
     size: "*Maximale Größe: insgesamt 5 MB.",
-    info: "Comments:"
+    info: "Comments:",
+    dob: "Date of Birth:",
+    loc: "Location",
+    contac: "Contact Info",
+    pais: "Land:",
+    city: "Stadt:",
+    adress: "ein Kleid:",
+    state: "Zustand:"
   }
 }

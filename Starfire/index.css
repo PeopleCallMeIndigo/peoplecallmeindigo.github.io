@@ -169,7 +169,7 @@ html {
 .hero--title {
 
     font-family: 'Philosopher', sans-serif;
-    font-size: 4.5rem;
+    font-size: 4.3rem;
     font-weight: 900;
     width:77%;
     text-transform: uppercase;
@@ -458,7 +458,7 @@ iframe:hover {
     background: url(src/images/a.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
 }
 
@@ -472,11 +472,12 @@ form {
 
 .contact-form {
     z-index: 15;
+    width: 500px;
 }
 
 .contact-right--img {
     margin-top: 2rem;
-    width: 650px;
+    width: 600px;
     height: auto;
     margin-left: -2rem;
     z-index: 3;
@@ -490,10 +491,24 @@ form {
     width: 100%;
     background-color: var(--blue);
     margin-top: 3rem;
-    padding: 2rem 2.5rem;
+    padding: 1rem 2rem;
     box-shadow: var(--layered-shadow);
     transition: var(--transitions-default);
     border-radius: 20px;
+}
+
+.data-cnt {
+    display: flex;
+    align-items:baseline;
+    justify-content:flex-start;
+}
+
+.data_loc {
+    font-family: var(--family);
+    font-size: var(--text);
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 0.1rem;
 }
 
 
@@ -553,7 +568,7 @@ form h5 {
 }
 
 
-input {
+input, select {
     font-family: var(--family);
     font-size: var(--text);
     width: 100%;
@@ -1175,7 +1190,7 @@ footer {
         background: url(src/images/a.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        height: 100vh;
+        height: auto;
         width: 100%;
         padding: 2rem;
     }
@@ -1808,7 +1823,7 @@ footer {
         background: url(src/images/a.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        height: 100vh;
+        height: auto;
         width: 100%;
         padding: 2rem;
     }
@@ -1822,6 +1837,7 @@ footer {
     }
 
     .contact-form {
+        width: 100%;
         z-index: 15;
     }
 
@@ -1842,7 +1858,7 @@ footer {
         width: 100%;
         background-color: var(--blue);
         margin-top: 3rem;
-        padding: 2rem 2.5rem;
+        padding: 1rem 1.5rem;
         box-shadow: var(--layered-shadow);
         transition: var(--transitions-default);
         border-radius: 20px;
