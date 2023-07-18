@@ -533,6 +533,21 @@ form h5 {
     width: 100%;
 }
 
+.form-box-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-box-p p {
+    font-family: var(--family);
+    font-size: var(--text);
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 0.1rem;
+}
+
 .form-boxy {
     display: flex;
     flex-direction: column;
@@ -558,6 +573,13 @@ form h5 {
     padding-bottom: 0.1rem;
 }
 
+.form-bop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .form-box--box {
     margin: 0 0.5rem;
     display: flex;
@@ -565,6 +587,30 @@ form h5 {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.form-box--boxp {
+    margin: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -0.8rem;
+}
+
+label {
+    font-family: var(--family);
+    font-size: var(--text);
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 0.1rem;
+    margin-top: -0.3;
+}
+
+.form-bop-input {
+    margin-top: 0.6rem;
+    width: 7%;
 }
 
 

@@ -66,6 +66,7 @@ pais = document.querySelector(".pais");
 city = document.querySelector(".city");
 adress = document.querySelector(".adress");
 state = document.querySelector(".state");
+notify = document.querySelector(".notify");
 
 link.forEach(el=>{
   el.addEventListener("click",()=> {
@@ -122,6 +123,7 @@ link.forEach(el=>{
     state.textContent = data[attr].state
     adress.textContent = data[attr].adress
     city.textContent = data[attr].city
+    notify.textContent = data[attr].notify
   })
 })
 
@@ -143,10 +145,10 @@ let data = {
     text_p_a: "The latest battery technology.",
     text_p_b: "Engineered with safety in mind.",
     text_p_c: "The best price on the market.",
-    text_p_d: "Begginer friendly and easy to use.",
+    text_p_d: "Beginner friendly and easy to use.",
     youtube: "Meet the future of snowboarding, today.",
     title_form: "ARE YOU INTERESTED?",
-    names: "Name:",
+    names: "First Name:",
     lastname: "Last Name:",
     email: "E-mail:",
     country: "Country:",
@@ -163,7 +165,8 @@ let data = {
     pais: "Country Code:",
     city: "City:",
     adress: "Adress:",
-    state: "State:"
+    state: "State:",
+    notify: "Notify me of any updates"
   },
   spanish: {
     title: "EL SNOWBOARD ELÉCTRICO MÁS INCREÍBLE",
@@ -185,8 +188,8 @@ let data = {
     text_p_d: "Amigable y fácil de usar.",
     youtube: "Conoce el futuro del snowboarding, hoy mismo.",
     title_form: "ESTÁS INTERESADO?",
-    names: "Nombre:",
-    lastname: "Apellido:",
+    names: "Nombre(s):",
+    lastname: "Apellido(s):",
     email: "Correo:",
     country: "País:",
     phone: "Teléfono:",
@@ -202,7 +205,8 @@ let data = {
     pais: "Código de País:",
     city: "Ciudad:",
     adress: "Domicilio:",
-    state: "Estado:"
+    state: "Estado:",
+    notify: "Notifícame de actualizaciones"
   },
   german: {
     title: "DAS UNGLAUBLICHSTE ELEKTRISCHE SNOWBOARD",
@@ -241,6 +245,7 @@ let data = {
     pais: "Land:",
     city: "Stadt:",
     adress: "ein Kleid:",
-    state: "Zustand:"
+    state: "Zustand:",
+    notify: "Benachrichtigen Sie mich über Aktualisierungen"
   }
 }
