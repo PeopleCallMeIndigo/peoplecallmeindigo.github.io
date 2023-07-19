@@ -164,7 +164,7 @@ let data = {
     contac: "Contact Info",
     pais: "Country Code:",
     city: "City:",
-    adress: "Adress:",
+    adress: "Address:",
     state: "State:",
     notify: "Notify me of any updates"
   },
