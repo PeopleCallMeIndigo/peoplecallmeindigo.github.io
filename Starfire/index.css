@@ -1529,6 +1529,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
     }
 
     .hero--title {
@@ -1538,9 +1539,8 @@ footer {
         font-weight: 900;
         width:100%;
         text-transform: uppercase;
-        margin-top: -3rem;
+        margin-top: -15rem;
         line-height: 1;
-        
     }
 
     .hero--text {
@@ -1558,10 +1558,10 @@ footer {
 
     .hero--btn {
         font-family: var(--family);
-        font-size: var(--text);
+        font-size: 1rem;
         font-weight: 400;
         text-decoration: none;
-        padding: 0.7rem 1.5rem;
+        padding: 0.4rem 0.6rem;
         color: #fff;
         background-color: var(--blue);
         box-shadow: var(--layered-shadow);
