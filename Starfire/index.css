@@ -422,7 +422,10 @@ video:hover {
     width: 100%;
 }
 
+
+
 .video--title{ 
+    margin-top: -4rem;
     font-family: var(--family);
     font-size: 2rem;
     font-weight: 700;
@@ -431,8 +434,13 @@ video:hover {
 }
 
 .video-container {
-    width: 800px;
+    width: 850px;
     height: 450px;
+}
+
+.video-containerr{
+    width: 1000px;
+    height: 500px;
 }
 
 iframe {
@@ -446,6 +454,11 @@ iframe {
 iframe:hover {
     transform: scale(1.05);
     transition: var(--transitions-slow);
+}
+
+.action-container--video {
+    width: 100%;
+    height: auto;
 }
 
 
@@ -1539,7 +1552,7 @@ footer {
         font-weight: 900;
         width:100%;
         text-transform: uppercase;
-        margin-top: -10rem;
+        margin-top: -15rem;
         line-height: 1;
     }
 
