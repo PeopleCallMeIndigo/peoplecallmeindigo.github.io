@@ -1225,6 +1225,11 @@ footer {
         height: auto;
     }
 
+    .video-containerr{
+        width: 100%;
+        height: 500px;
+    }
+
     iframe {
         width: 100%;
         height: 450px;
@@ -1817,14 +1822,6 @@ footer {
         height: 450px;
     }
 
-    iframe {
-        width: 100%;
-        height: 450px;
-        border: none;
-        box-shadow: var(--layered-shadow);
-        transition: var(--transitions-slow);
-    }
-
     iframe:hover {
         transform: scale(1.05);
         transition: var(--transitions-slow);
@@ -1868,6 +1865,19 @@ footer {
 
     iframe:hover {
         transform: scale(1.05);
+        transition: var(--transitions-slow);
+    }
+
+    .video-containerr{
+        width: 100%;
+        height: auto;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px;
+        border: auto;
+        box-shadow: var(--layered-shadow);
         transition: var(--transitions-slow);
     }
 
