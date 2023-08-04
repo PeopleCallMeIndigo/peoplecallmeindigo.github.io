@@ -549,11 +549,21 @@ html {
 
 .menu-pdf-container-english {
     display: none;
+    flex-direction: column;
  margin: 0 var(--spacing-content);
+}
+
+.menu-pdf-container-english-mobile {
+    display: none;
+}
+
+.menu-pdf-container-spanish-mobile {
+    display: none;
 }
 
 .menu-pdf-container-spanish {
     display: none;
+    flex-direction: column;
     margin: 0 var(--spacing-content);
 }
 
@@ -1811,12 +1821,34 @@ aside {
 
     .menu-pdf-container-english {
         display: none;
-    margin: 0 var(--spacing-content);
+        margin: 0;
     }
 
     .menu-pdf-container-spanish {
         display: none;
-        margin: 0 var(--spacing-content);
+        margin: 0;
+    }
+
+    .menu-pdf-container-english-mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .menu-pdf-container-spanish-mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    object {
+        display: none;
     }
 
     .spanish {
@@ -1906,7 +1938,7 @@ aside {
         color: var(--white);
         text-shadow: var(--layered-shadow);
         text-align: center;
-        padding: 0 120px;
+        padding: 0 70px;
         font-size: var(--text);
         font-weight: 300;
         color: var(--white);
