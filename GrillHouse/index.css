@@ -557,6 +557,10 @@ html {
     margin: 0 var(--spacing-content);
 }
 
+object {
+    height: 80vh;
+}
+
 .spanish {
     width: 51px;
     height: 44px;
@@ -2356,6 +2360,213 @@ aside {
     .socials-bar--icon:hover {
         transform: scale(1.04);
     }
+
+    /* About Us Page Styling  */
+.story {
+    overflow: hidden;
+
+}
+
+.story-hero {
+    margin-top: 8rem;
+    width: 100%;
+    height: 10vh;
+    padding: 4rem var(--spacing-content);
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("src/images/About-page-hero.jpg");
+    transition: var(--transitions-slow);
+}
+
+.story-hero:hover {
+    transform: scale(1.02);
+    transition: var(--transitions-slow);
+}
+
+.story-hero--title {
+    font-family: var(--family-title);
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    font-weight: 600;
+    color: var(--white);
+    text-transform: uppercase;
+    text-shadow: var(--layered-shadow);
+}
+
+.story-hero--p {
+    font-family: var(--family-borel);
+    font-size: var(--text);
+    color: var(--golden);
+    text-shadow: var(--layered-shadow);
+    margin-top: -0.5rem;
+}
+
+.story-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 var(--spacing-content);
+}
+
+.story-content--video {
+    width: 100%;
+    padding: 0 var(--spacing-content);
+    margin-bottom: 3rem;
+}
+
+.story--line {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid var(--golden);
+}
+
+
+.story-content-box--title {
+    font-family: var(--family-title);
+    font-size: 2.2rem;
+    padding: var(--spacing-content);
+    font-weight: 600;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: var(--layered-shadow);
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.story-content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.story-content-box--p {
+    font-family: var(--family-text);
+    font-size: var(--text);
+    font-weight: 300;
+    color: var(--white);
+    text-shadow: var(--layered-shadow);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.story-content-box--img {
+    border-radius: 50%;
+    box-shadow: var(--layered-shadow);
+}
+
+.story-content-box--name {
+    font-family: var(--family-text);
+    font-size: 1rem;
+    color: var(--white);
+    text-shadow: var(--layered-shadow);
+    margin-top: 0.5rem;
+}
+
+
+
+/* Reservation Page Styling */
+.booking {
+    overflow: hidden;
+    box-shadow: var(--layered-shadow);
+    margin-bottom: -1rem;
+}
+
+.booking-hero {
+    width: 100%;
+    height: 35vh;
+    padding: 4rem var(--spacing-content);
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("src/images/Reservation-hero-cover.jpg");
+    transition: var(--transitions-slow);
+}
+
+.booking-hero:hover {
+    transform: scale(1.02);
+    transition: var(--transitions-slow);
+}
+
+.booking-hero--title {
+    font-family: var(--family-title);
+    font-size: 2.5rem;
+    padding-top: 4rem;
+    font-weight: 600;
+    color: var(--white);
+    text-transform: uppercase;
+    text-shadow: var(--layered-shadow);
+}
+
+.booking-hero--p {
+    font-family: var(--family-borel);
+    font-size: var(--text);
+    color: var(--golden);
+    text-shadow: var(--layered-shadow);
+    margin-top: -0.5rem;
+}
+
+
+
+/* Gallery Page Styling */
+.museum {
+    overflow: hidden;
+    margin-bottom: -1rem;
+}
+
+.museum-hero {
+    width: 100%;
+    height: 40vh;
+    padding: 4rem var(--spacing-content);
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("src/images/Gallery-hero-cover.jpg");
+    transition: var(--transitions-slow);
+}
+
+.museum-hero:hover {
+    transform: scale(1.02);
+    transition: var(--transitions-slow);
+}
+
+.museum-hero--title {
+    font-family: var(--family-title);
+    font-size: 2.5rem;
+    padding-top: 4rem;
+    font-weight: 600;
+    color: var(--white);
+    text-transform: uppercase;
+    text-shadow: var(--layered-shadow);
+}
+
+.museum-hero--p {
+    font-family: var(--family-borel);
+    font-size: var(--text);
+    color: var(--golden);
+    text-shadow: var(--layered-shadow);
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 0 var(--spacing-content);
+}
+
 
 }
 
