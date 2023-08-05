@@ -83,12 +83,12 @@ html {
 }
 
 .nav-logo-cnt--img {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 60px;
     transition: var(--transitions-slow);
     position: fixed;
     left: 2%;
-    top: -3%;
+    top: 3%;
     filter: drop-shadow(--layered-shadow);
 }
 
@@ -1350,12 +1350,12 @@ aside {
     }
 
     .nav-logo-cnt--img {
-        width: 175px;
-        height: 175px;
+        width: 130px;
+        height: 45px;
         transition: var(--transitions-slow);
         position: fixed;
-        left: -2%;
-        top: -3.5%;
+        left: 3.3%;
+        top: 3%;
         filter: drop-shadow(--layered-shadow);
     }
 
