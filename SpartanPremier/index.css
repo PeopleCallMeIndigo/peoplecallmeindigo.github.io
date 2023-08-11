@@ -53,6 +53,7 @@ html {
     height: 100vh;
     background-color: var(--black);
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 /* Fade Dynamic Class */
@@ -1202,6 +1203,7 @@ footer {
     font-family: var(--family-text);
     font-size: 0.9rem;
     font-weight: 300;
+    text-decoration: none;
     color: var(--white);
     text-shadow: var(--layered-shadow);
     text-align: center;
@@ -1226,7 +1228,7 @@ footer {
 
 
 /* Mobile Responsive Styling */
-@media only screen and (min-width: 220px) and (max-width: 500px) {
+@media only screen and (min-width: 220px) and (max-width: 1000px) {
 
     .desktop {
         display: none;
@@ -2366,6 +2368,7 @@ footer {
         font-weight: 300;
         color: var(--white);
         text-shadow: var(--layered-shadow);
+        text-decoration: none;
         text-align: center;
     }
 
@@ -2435,6 +2438,7 @@ footer {
         font-family: var(--family-text);
         font-size: 0.9rem;
         font-weight: 300;
+        text-decoration: none;
         color: var(--white);
         text-shadow: var(--layered-shadow);
         text-align: center;
