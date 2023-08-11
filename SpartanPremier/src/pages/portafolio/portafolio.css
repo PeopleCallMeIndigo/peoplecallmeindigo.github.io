@@ -1,0 +1,286 @@
+.portafolio-hero {
+    width: 100%;
+    height: 50vh;
+    padding: 5rem var(--spacing-content);
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../..//images/Portafolio-cover-2.jpg");
+    transition: var(--transitions-slow);
+    box-shadow: var(--layered-shadow);
+}
+
+.portafolio-hero--title {
+    font-family: var(--family-title);
+    font-size: 6rem;
+    font-weight: 600;
+    color: var(--bronze);
+    text-transform: uppercase;
+    text-shadow: var(--layered-shadow);
+}
+
+
+
+.projects {
+    padding: 2.5rem var(--spacing-content);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.projects-card--name {
+    font-family: var(--family-text);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.projects-card--desc {
+    font-family: var(--family-text);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.project-card-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 1rem;
+}
+
+.project-card-gallery-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card-gallery--img {
+    width: 100%;
+    height: 40vh;
+    box-shadow: var(--layered-shadow);
+    transition: var(--transitions-slow);
+}
+
+.project-card-gallery--img:hover {
+    transform: scale(1.03);
+    transition: var(--transitions-slow);
+}
+
+.project-card-gallery--img-b {
+    width: auto;
+    height: 50vh;
+
+    margin: 0 0.5rem;
+    box-shadow: var(--layered-shadow);
+    margin-top: 1rem;
+    transition: var(--transitions-slow);
+}
+
+.project-card-gallery--img-b:hover {
+    transform: scale(1.03);
+    transition: var(--transitions-slow);
+}
+
+.projects-card--line {
+    width: 90%;
+    border-bottom: 2px solid var(--bronze);
+    margin: 5rem 0;
+}
+
+.up {
+    margin-top: 8rem;
+}
+
+.portafolio-btn {
+    margin: 0 auto;
+    margin-top: 5rem;
+    justify-content: center;
+
+}
+
+.portafolio-btn--link {
+    font-family: var(--family-text);
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 1rem 1.6rem;
+    box-shadow: var(--layered-shadow);
+    transition: var(--transitions-slow);
+}
+
+.portafolio-btn--link:hover {
+    color: var(--white);
+    background-color: var(--silver);
+    transition: var(--transitions-slow);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Responsive Styling */
+@media only screen and (min-width: 220px) and (max-width: 500px) {
+    .portafolio-hero {
+        width: 100%;
+        height: 30vh;
+        padding: 5rem var(--spacing-content);
+        padding-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-image: url("../..//images/Portafolio-cover-2.jpg");
+        transition: var(--transitions-slow);
+        box-shadow: var(--layered-shadow);
+    }
+    
+    .portafolio-hero--title {
+        font-family: var(--family-title);
+        font-size: 3.6rem;
+        font-weight: 600;
+        color: var(--bronze);
+        text-transform: uppercase;
+        text-shadow: var(--layered-shadow);
+        margin-top: 3.5rem;
+    }
+    
+    
+    
+    .projects {
+        padding: 3rem 2rem;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .projects-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 3rem 0;
+    }
+    
+    .projects-card--name {
+        font-family: var(--family-text);
+        font-size: var(--text);
+        font-weight: 300;
+        color: var(--black);
+        margin-bottom: 1rem;
+    }
+    
+    .projects-card--desc {
+        font-family: var(--family-text);
+        font-size: var(--text);
+        font-weight: 300;
+        color: var(--black);
+        margin-bottom: 1rem;
+    }
+    
+    .project-card-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        gap: 1rem;
+    }
+    
+    .project-card-gallery-b {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .project-card-gallery--img {
+        width: 100%;
+        height: 23vh;
+        box-shadow: var(--layered-shadow);
+        transition: var(--transitions-slow);
+    }
+    
+    .project-card-gallery--img:hover {
+        transform: scale(1.03);
+        transition: var(--transitions-slow);
+    }
+    
+    .project-card-gallery--img-b {
+        width: 100%;
+        height: 45vh;
+    
+        margin: 0 0.5rem;
+        box-shadow: var(--layered-shadow);
+        margin-top: 1rem;
+        transition: var(--transitions-slow);
+    }
+    
+    .project-card-gallery--img-b:hover {
+        transform: scale(1.03);
+        transition: var(--transitions-slow);
+    }
+    
+    .projects-card--line {
+        width: 90%;
+        border-bottom: 2px solid var(--bronze);
+        margin: 5rem 0;
+    }
+    
+    .up {
+        margin-top: 8rem;
+    }
+    
+    .portafolio-btn {
+        margin: 0 auto;
+        margin-top: 3rem;
+        justify-content: center;
+    
+    }
+    
+    .portafolio-btn--link {
+        font-family: var(--family-text);
+        font-weight: 600;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: var(--white);
+        background-color: var(--black);
+        padding: 1rem 1.6rem;
+        box-shadow: var(--layered-shadow);
+        transition: var(--transitions-slow);
+    }
+    
+    .portafolio-btn--link:hover {
+        color: var(--white);
+        background-color: var(--silver);
+        transition: var(--transitions-slow);
+    }
+}

@@ -1,0 +1,386 @@
+.contacto-hero {
+    width: 100%;
+    height: 50vh;
+    padding: 5rem var(--spacing-content);
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../..//images/Contacto-cover-1.jpg");
+    transition: var(--transitions-slow);
+    box-shadow: var(--layered-shadow);
+}
+
+.contacto-hero--title {
+    font-family: var(--family-title);
+    font-size: 6rem;
+    font-weight: 600;
+    color: var(--bronze);
+    text-transform: uppercase;
+    text-shadow: var(--layered-shadow);
+}
+
+.location {
+    background-image: none;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(183, 160, 66);
+    padding: 2rem 2.5rem;
+    margin-left: 1rem;
+    box-shadow: var(--layered-shadow);
+    transition: var(--transitions-default);
+}
+
+form:hover {
+    transform: scale(1.02);
+    transition: var(--transitions-default);
+}
+
+.form--title {
+    font-size: 1.7rem;
+    font-family: var(--family-text);
+    font-weight: 1000;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: 0.5rem 0;
+    transition: var(--transitions-default);
+}
+
+.cotizacion-form--line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0.5remrem 0;
+    border-bottom: 2px solid var(--white);
+    margin-bottom: 1rem
+}
+
+.form-cnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-cnt-box {
+    display: flex;
+    align-items: center;
+}
+
+.form-cnt--info {
+    font-family: var(--family-text);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--white);
+    transition: var(--transitions-slow);
+    margin-bottom: 0.2rem;
+}
+
+input, textarea {
+    font-family: var(--family-text);
+    font-size: 1rem;
+    width: 100%;
+    margin: 0.7rem var(--spacing-tiny);
+    margin-bottom: 0.5rem;
+    padding: 2rem var(--spacing-tiny);
+    padding-left: 0.5rem;
+    outline: none;
+    background: #fdfdfd;
+    border: 1px solid #cacaca;
+}
+
+.space {
+    margin-right: 0.5rem;
+}
+
+.spacex {
+    margin-left: 0.5rem;
+}
+
+.cotizacion-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cotizacion--file {
+    width: 100%;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.cotizacion--text {
+    font-size: 0.7rem;
+    font-family: var(--family-text);
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 0.4rem;
+    text-align: center;
+}
+
+button {
+    font-family: var(--family-text);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: var(--spacing-content);
+    padding: 0.3rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--bronze);
+    color: var(--white);
+    outline: none;
+    cursor: pointer;
+    width: 15%;
+    align-self: flex-end;
+    transition: var(--transitions-default);
+}
+
+button:hover {
+    color: var(--silver);
+    transform: scale(1.05);
+    transition: var(--transitions-default);
+}
+
+
+/* Location Section Styling */
+.location-box--title {
+    font-family: var(--family-text);
+    font-size: var(--title);
+    font-weight: 1000;
+    color: var(--black);
+    text-transform: uppercase;
+    text-shadow: var(--layered-shadow);
+    margin-bottom: 2rem;
+    padding: 0 8%;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+}
+
+iframe {
+    width: 100%;
+}
+
+.location-container--p {
+    font-family: var(--family-text);
+    font-size: var(--text);
+    font-weight: 300;
+    color: var(--black);
+    margin-bottom: 1rem;
+    text-shadow: var(--layered-shadow);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Mobile Responsive Styling */
+@media only screen and (min-width: 220px) and (max-width: 500px) {
+    .contacto-hero {
+        width: 100%;
+        height: 30vh;
+        padding: 5rem var(--spacing-content);
+        padding-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-image: url("../..//images/Contacto-cover-1.jpg");
+        transition: var(--transitions-slow);
+        box-shadow: var(--layered-shadow);
+    }
+    
+    .contacto-hero--title {
+        font-family: var(--family-title);
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: var(--bronze);
+        text-transform: uppercase;
+        text-shadow: var(--layered-shadow);
+        margin-top: 3.5rem;
+    }
+    
+    .location {
+        background-image: none;
+    }
+    
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        background-color: rgb(183, 160, 66);
+        padding: 1rem 1.5rem;
+        margin-left: 0;
+        box-shadow: var(--layered-shadow);
+        transition: var(--transitions-default);
+    }
+    
+    form:hover {
+        transform: scale(1.02);
+        transition: var(--transitions-default);
+    }
+    
+    .form--title {
+        font-size: 1.5rem;
+        font-family: var(--family-text);
+        font-weight: 1000;
+        text-transform: uppercase;
+        color: var(--white);
+        margin: 0.5rem 0;
+        transition: var(--transitions-default);
+    }
+    
+    .cotizacion-form--line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0.5rem 0;
+        border-bottom: 2px solid var(--white);
+        margin-bottom: 1rem
+    }
+    
+    .form-cnt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .form-cnt-box {
+        display: flex;
+        align-items: center;
+    }
+    
+    .form-cnt--info {
+        font-family: var(--family-text);
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--white);
+        transition: var(--transitions-slow);
+        margin-bottom: 0.2rem;
+    }
+    
+    input, textarea {
+        font-family: var(--family-text);
+        font-size: 1rem;
+        width: 100%;
+        margin: 0.7rem var(--spacing-tiny);
+        margin-bottom: 0.3rem;
+        padding: 2rem var(--spacing-tiny);
+        padding-left: 0.5rem;
+        outline: none;
+        background: #fdfdfd;
+        border: 1px solid #cacaca;
+    }
+    
+    .space {
+        margin-right: 0.5rem;
+    }
+    
+    .spacex {
+        margin-left: 0.5rem;
+    }
+    
+    .cotizacion-form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cotizacion--file {
+        width: 100%;
+        cursor: pointer;
+        padding: 1rem;
+    }
+    
+    .cotizacion--text {
+        font-size: 0.7rem;
+        font-family: var(--family-text);
+        font-weight: 400;
+        color: #000;
+        margin-bottom: 0.4rem;
+        text-align: center;
+    }
+    
+    button {
+        font-family: var(--family-text);
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-right: var(--spacing-content);
+        padding: 0.3rem 0;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--bronze);
+        color: var(--white);
+        outline: none;
+        cursor: pointer;
+        width: auto;
+        align-self: flex-end;
+        transition: var(--transitions-default);
+    }
+    
+    button:hover {
+        color: var(--silver);
+        transform: scale(1.05);
+        transition: var(--transitions-default);
+    }
+    
+    
+    /* Location Section Styling */
+    .location-box--title {
+        font-family: var(--family-text);
+        font-size: 1.8rem;
+        font-weight: 1000;
+        color: var(--black);
+        text-transform: uppercase;
+        text-shadow: var(--layered-shadow);
+        margin-bottom: 2rem;
+        padding: 0 8%;
+    }
+    
+    .location-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    iframe {
+        width: 100%;
+    }
+    
+    .location-container--p {
+        font-family: var(--family-text);
+        font-size: 1rem;
+        font-weight: 300;
+        color: var(--black);
+        margin-bottom: 1rem;
+        text-shadow: var(--layered-shadow);
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
