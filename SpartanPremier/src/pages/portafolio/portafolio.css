@@ -1,7 +1,7 @@
 .portafolio-hero {
     width: 100%;
     height: 50vh;
-    padding: 5rem var(--spacing-content);
+    padding: 8rem var(--spacing-content);
     padding-bottom: 4rem;
     display: flex;
     flex-direction: column;

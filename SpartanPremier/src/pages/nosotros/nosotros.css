@@ -1,7 +1,7 @@
 .nosotros-hero {
     width: 100%;
     height: 50vh;
-    padding: 5rem var(--spacing-content);
+    padding: 8rem var(--spacing-content);
     padding-bottom: 4rem;
     display: flex;
     flex-direction: column;
@@ -148,6 +148,16 @@
     padding: 2rem;
 }
 
+.wallpaper {
+    padding: 0 var(--spacing-content);
+    background-color: var(--white);
+    margin-top: -1rem;
+    padding-bottom: 3.5rem;
+}
+
+.wallpaper--img {
+    width: 100%;
+}
 
 
 
