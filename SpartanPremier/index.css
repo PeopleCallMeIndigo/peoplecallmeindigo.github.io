@@ -89,8 +89,8 @@ strong {
 }
 
 .nav-logo-cnt--img {
-    height: 70px;
-    width: 70px;
+    height: 90px;
+    width: 90px;
     -webkit-filter: drop-shadow(--layered-shadow);
   filter: drop-shadow(--layered-shadow);
   transition: var(--transitions-default);
@@ -113,7 +113,8 @@ strong {
     display: inline-block;
     font-family: var(--family-text);
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
     text-transform: uppercase;
     text-shadow: var(--layered-shadow);
     background: rgb(183,160,66);
@@ -128,7 +129,7 @@ strong {
 .nav-container--link:hover {
     font-family: var(--family-text);
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     background: rgb(183,160,66);
     background: radial-gradient(circle, rgba(198,176,81,1) 0%, rgba(231,209,122,1) 50%, rgba(218,193,90,1) 100%);
@@ -321,7 +322,7 @@ strong {
 .about-cnt--title {
     font-family: var(--family-text);
     font-weight: 1000;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     text-shadow: var(--layered-shadow);
     color: var(--black);
@@ -500,7 +501,7 @@ strong {
 .services-header--title {
     font-family: var(--family-text);
     font-weight: 1000;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
     text-transform: uppercase;
     color: var(--white);
@@ -526,6 +527,7 @@ strong {
 }
 
 .services-cnt-box {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -584,7 +586,7 @@ strong {
 .projects-header--title {
     font-family: var(--family-text);
     font-weight: 1000;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
     text-transform: uppercase;
     color: var(--black);
@@ -620,7 +622,7 @@ strong {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding: 1rem;
+    padding: 0;
     margin: 0 1rem;
     box-shadow: var(--layered-shadow);
     transition: var(--transitions-slow);
@@ -632,12 +634,12 @@ strong {
 }
 
 .comercial {
-    background-image: url("src/images/Comercial-p.jpg");
+    background-image: url("src/images/Estacionamiento.jpg");
 
 }
 
 .gubernamental {
-    background-image: url("src/images/Gubernamental-p.jpg");
+    background-image: url("src/images/Bridge.jpg");
 }
 
 .carreteras {
@@ -647,17 +649,17 @@ strong {
 .projects-cnt-card--type {
     font-family: var(--family-text);
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--white);
     padding-left: 0.3rem;
-    border-left: 2px solid var(--bronze);
+    border-left: 2px solid var(--black);
     text-shadow: var(--layered-shadow);
 }
 
 .projects-cnt-card--p {
     font-family: var(--family-text);
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--white);
     text-shadow: var(--layered-shadow);
     margin: 0.3rem 0;
@@ -674,9 +676,8 @@ strong {
     font-size: 0.9rem;
     text-transform: uppercase;
     color: var(--white);
-    background-color: var(--bronze);
+    background-color: var(--black);
     padding: 0.5rem 0.8rem;
-    box-shadow: var(--layered-shadow);
     transition: var(--transitions-slow);
 }
 
@@ -698,7 +699,6 @@ strong {
     color: var(--white);
     background-color: var(--black);
     padding: 0.6rem 1rem;
-    box-shadow: var(--layered-shadow);
     transition: var(--transitions-slow);
 }
 
@@ -706,6 +706,11 @@ strong {
     color: var(--white);
     background-color: var(--silver);
     transition: var(--transitions-slow);
+}
+
+.pj-bg {
+    padding: 1rem;
+    background-color: var(--bronze);
 }
 
 
@@ -756,7 +761,7 @@ strong {
 .numbers-box-sec--numbers {
     font-family: var(--family-text);
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 3.3rem;
     text-transform: uppercase;
     color: var(--black);
 }
@@ -792,7 +797,7 @@ strong {
 .team-header--title {
     font-family: var(--family-text);
     font-weight: 1000;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
     text-transform: uppercase;
     color: var(--white);
@@ -914,7 +919,7 @@ strong {
 
 .location-box--title {
     font-family: var(--family-text);
-    font-size: var(--title);
+    font-size: 3rem;
     font-weight: 1000;
     color: var(--white);
     text-transform: uppercase;
