@@ -873,7 +873,7 @@ footer {
 
     .nav-container {
         overflow: hidden;
-        width: 100%;
+        width: 105%;
         height: 100vh;
         display: flex;
         top: -0.1rem;
