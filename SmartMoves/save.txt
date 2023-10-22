@@ -1,0 +1,226 @@
+<!-- Hero Section -->
+        <section class="hero" id="hero">
+
+            <!-- Image Slider Start -->
+            <div class="slider">
+                <!-- Radio Buttons Start -->
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1"/>
+                    <input type="radio" name="radio-btn" id="radio2"/>
+                    <input type="radio" name="radio-btn" id="radio3"/>
+                    <input type="radio" name="radio-btn" id="radio4"/>
+                    <input type="radio" name="radio-btn" id="radio5"/>
+                
+                    <!-- Radio Buttons Start -->
+                    <!-- Slide Images Start-->
+                    <div class="slide first">
+                        <header class="hero-content">
+                            <div class="hero-content-box" data-aos="zoom-in"
+                            data-aos-duration="900" data-aos-delay="1000">
+                            <h1 class="hero-content--text" data-aos="fade-right"
+                            data-aos-duration="900" data-aos-delay="1300">We are an investment company investing in real estate and infrastructure in economically emerging geographic regions. </h1>
+                        </div>
+                        </header>
+                        <img src="src/images/Hero_1.jpg" class="desktop" alt=""/>
+                        <img src="src/images/Hero_1_mobile.jpg" class="mobile" alt=""/>
+                    </div>
+                    <div class="slide">
+                        <div class="hero-content">
+                            <div class="hero-content-box">
+                                <h1 class="hero-content--text">As a sovereign investor with an entrepreneurial mindset, we strategically invest in real estate and infrastructure projects that will deliver a competitive advantage.</h1>
+                            </div>
+                        </div>
+                        <img src="src/images/Hero_2.jpg" class="desktop" alt=""/>
+                        <img src="src/images/Hero_2_mobile.jpg" class="mobile" alt=""/>
+                    </div>
+                    <div class="slide">
+                        <div class="hero-content">
+                            <div class="hero-content-box">
+                                <h1 class="hero-content--text">We are founded on the ethical principles of solid performance and transparency.  Implementation of best practice commercial principles and the pursuit of solid financial returns are our focus. </h1>
+                            </div>
+                        </div>
+                        <img src="src/images/Hero_3.jpg" class="desktop" alt=""/>
+                        <img src="src/images/Hero_3_mobile.jpg" class="mobile" alt=""/>
+                    </div>
+                    <div class="slide">
+                        <div class="hero-content">
+                            <div class="hero-content-box">
+                            <h1 class="hero-content--text">Responsible investing is at our core.  We aim to deliver strong financial returns, to create opportunities and leave a positive impact in the regions in which we develop.</h1>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                        <img src="src/images/Hero_4.jpg" class="desktop" alt=""/>
+                        <img src="src/images/Hero_4_mobile.jpg" class="mobile" alt=""/>
+                    </div>
+                    <div class="slide">
+                        <div class="hero-content">
+                            <div class="hero-content-box">
+                            <h1 class="hero-content--text">We strive to integrate environmental and social considerations into our investments and partner engagements.</p>
+                            </div>
+                        </div>
+                        <img src="src/images/Hero_5.jpg" class="desktop" alt=""/>
+                        <img src="src/images/Hero_5_mobile.jpg" class="mobile" alt=""/>
+                    </div>
+                    <!-- Slide Images End-->
+
+                    <!-- Automatic Navigation Start -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                    </div>
+                    <!-- Automatic Navigation End -->
+
+                    <!-- Manual Navigation Start -->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
+                    </div>
+                    <!-- Manual Navigation End -->
+                </div>
+                    
+                
+            <!-- Image Slider End -->
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Slider Styling */
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden !important;
+}
+
+.slides {
+    width: 500%;
+    height: 100vh;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100vh;
+}
+
+.navigation-manual {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 90vh;
+}
+
+.manual-btn {
+    border: 3px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: var(--transitions-default);
+    box-shadow: var(--layered-shadow);
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 33px;
+}
+
+.manual-btn:hover {
+    background: #fff;
+}
+
+.hide{
+    background: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+    background: #fff;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+    background: #fff;
+ }
+#radio3:checked ~ .first{
+    margin-left: -40%;
+    background: #fff;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+    background: #fff;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -80%;
+    background: #fff;
+}
+
+/* Automatic Navigation Styling */
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 90vh;
+}
+
+.navigation-auto div {
+    border: 3px solid var(--white);
+    padding: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: var(--transitions-default);
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 33px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #fff;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #fff;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #fff;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #fff;
+  }
+
+  #radio5:checked ~ .navigation-auto .auto-btn5{
+    background: #fff;
+  }
