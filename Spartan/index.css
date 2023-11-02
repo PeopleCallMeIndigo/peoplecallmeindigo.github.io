@@ -309,7 +309,7 @@ a {
     height: 70px;
     width: 70px;
     opacity: 0.9;
-    margin-bottom: -11rem;
+    margin-bottom: -9rem;
     transition: var(--transitions-slow);
 }
 
@@ -361,7 +361,7 @@ a {
 
 .about-container {
     display: flex;
-    width: 60%;
+    width: 80%;
     justify-content: center;
     align-items: center;
 }
@@ -828,7 +828,7 @@ strong {
 /* Team Section Styling */
 .team {
     width: 100%;
-    height: 100vh;
+    height: 105vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -851,7 +851,7 @@ strong {
 
 .short {
     text-align: center;
-    width: 30%;
+    width: 50%;
 }
 .team-container {
     display: flex;
@@ -1133,7 +1133,7 @@ footer {
 
 .copy-cnt {
     width: 100%;
-    height: 50px;
+    height: 100px;
     background-image: url("src/images/Footer.jpg"); 
     background-repeat: no-repeat;
     background-position: center;
