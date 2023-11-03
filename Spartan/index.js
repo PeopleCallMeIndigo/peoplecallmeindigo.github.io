@@ -73,4 +73,12 @@ function teamDescB () {
         teamOpenB = false;
     }
 }
+
+
+// Force Reset Scroll to Top - Must Be At Last
+history.scrollRestoration = "manual";
+
+$(window).on('beforeunload', function(){
+      $(window).scrollTop(0);
+});
   
