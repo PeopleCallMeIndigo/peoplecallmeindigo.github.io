@@ -900,9 +900,9 @@ strong {
 .team-container-card-desc--text {
     font-family: var(--family-text);
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: var(--black);
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .team-container-card-holder {
